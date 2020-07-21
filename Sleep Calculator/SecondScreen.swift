@@ -15,24 +15,23 @@ class SecondScreen: UIViewController {
     @IBOutlet weak var timePicker: UIDatePicker!
     
     var timer = Timer()
+    var clocks: Dictionary<Int, UILabel> = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backBarButtonItem
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
-        firstCycleClock.layer.cornerRadius = 4.0
-        firstCycleClock.layer.masksToBounds = true
-        secondCycleClock.layer.cornerRadius = 4.0
-        secondCycleClock.layer.masksToBounds = true
-        thirdCycleClock.layer.cornerRadius = 4.0
-        thirdCycleClock.layer.masksToBounds = true
-        fourthCycleClock.layer.cornerRadius = 4.0
-        fourthCycleClock.layer.masksToBounds = true
-        fifthCycleClock.layer.cornerRadius = 4.0
-        fifthCycleClock.layer.masksToBounds = true
-        sixthCycleClock.layer.cornerRadius = 4.0
-        sixthCycleClock.layer.masksToBounds = true
-        timePicker.layer.cornerRadius = 4.0
-        timePicker.layer.masksToBounds = true
+        
+        clocks = [
+        0: firstCycleClock,
+        1: secondCycleClock,
+        2: thirdCycleClock,
+        3: fourthCycleClock,
+        4: fifthCycleClock,
+        5: sixthCycleClock,
+        ]
+        
         self.tick()
     }
     
@@ -43,12 +42,10 @@ class SecondScreen: UIViewController {
         formatter.locale = Locale(identifier:  preferredLanguage)
         
         formatter.dateFormat = "HH:mm"
-        //let dateString = formatter.string(from: timePicker.date)
         let dateString = formatter.string(from: timePicker.date)
         
         let time = dateString.split(separator: ":")
-        print(time[0])
-        
+       
         
         let newDataString = formatter.string(from: timePicker.date)
         let hours = Int(time[0])
@@ -98,109 +95,23 @@ class SecondScreen: UIViewController {
             else {
                 newAmpm = "AM"
             }
-            if cycle==1 {
-                if newMinutes < 10{
-                    firstCycleClock.text = "\(newHours):0\(newMinutes) \(newAmpm)"
-                }
-                else {
-                    firstCycleClock.text = "\(newHours):\(newMinutes) \(newAmpm)"
-                }
-                
+            if newMinutes < 10{
+                self.clocks[cycle-1]!.text = "\(newHours):0\(newMinutes) \(newAmpm)"
             }
-            if cycle==2 {
-                if newMinutes < 10{
-                    secondCycleClock.text = "\(newHours):0\(newMinutes) \(newAmpm)"
-                }
-                else {
-                    secondCycleClock.text = "\(newHours):\(newMinutes) \(newAmpm)"
-                }
+            else {
+                self.clocks[cycle-1]!.text = "\(newHours):\(newMinutes) \(newAmpm)"
             }
-            if cycle==3 {
-                if newMinutes < 10{
-                    thirdCycleClock.text = "\(newHours):0\(newMinutes) \(newAmpm)"
-                }
-                else {
-                    thirdCycleClock.text = "\(newHours):\(newMinutes) \(newAmpm)"
-                }
-            }
-            if cycle==4 {
-                if newMinutes < 10{
-                    fourthCycleClock.text = "\(newHours):0\(newMinutes) \(newAmpm)"
-                }
-                else {
-                    fourthCycleClock.text = "\(newHours):\(newMinutes) \(newAmpm)"
-                }
-            }
-            if cycle==5 {
-                if newMinutes < 10{
-                    fifthCycleClock.text = "\(newHours):0\(newMinutes) \(newAmpm)"
-                }
-                else {
-                    fifthCycleClock.text = "\(newHours):\(newMinutes) \(newAmpm)"
-                }
-            }
-            if cycle==6 {
-                if newMinutes < 10{
-                    sixthCycleClock.text = "\(newHours):0\(newMinutes) \(newAmpm)"
-                }
-                else {
-                    sixthCycleClock.text = "\(newHours):\(newMinutes) \(newAmpm)"
-                }
-            }
-            
         }
         else
         {
             if newHours<0 {
                 newHours = newHours + 24
             }
-            if cycle==1 {
-                if newMinutes < 10{
-                    firstCycleClock.text = "\(newHours):0\(newMinutes)"
-                }
-                else {
-                    firstCycleClock.text = "\(newHours):\(newMinutes)"
-                }
+            if newMinutes < 10{
+                self.clocks[cycle-1]!.text = "\(newHours):0\(newMinutes)"
             }
-            if cycle==2 {
-                if newMinutes < 10{
-                    secondCycleClock.text = "\(newHours):0\(newMinutes)"
-                }
-                else {
-                    secondCycleClock.text = "\(newHours):\(newMinutes)"
-                }
-            }
-            if cycle==3 {
-                if newMinutes < 10{
-                    thirdCycleClock.text = "\(newHours):0\(newMinutes)"
-                }
-                else {
-                    thirdCycleClock.text = "\(newHours):\(newMinutes)"
-                }
-            }
-            if cycle==4 {
-                if newMinutes < 10{
-                    fourthCycleClock.text = "\(newHours):0\(newMinutes)"
-                }
-                else {
-                    fourthCycleClock.text = "\(newHours):\(newMinutes)"
-                }
-            }
-            if cycle==5 {
-                if newMinutes < 10{
-                    fifthCycleClock.text = "\(newHours):0\(newMinutes)"
-                }
-                else {
-                    fifthCycleClock.text = "\(newHours):\(newMinutes)"
-                }
-            }
-            if cycle==6 {
-                if newMinutes < 10{
-                    sixthCycleClock.text = "\(newHours):0\(newMinutes)"
-                }
-                else {
-                    sixthCycleClock.text = "\(newHours):\(newMinutes)"
-                }
+            else {
+                self.clocks[cycle-1]!.text = "\(newHours):\(newMinutes)"
             }
         }}
 }
