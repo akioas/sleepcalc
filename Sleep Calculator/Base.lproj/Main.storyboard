@@ -413,10 +413,9 @@
         <!-- - -->
         <scene sceneID="XPL-kA-q4R">
             <objects>
-                <navigationController title=" -" automaticallyAdjustsScrollViewInsets="NO" id="MIa-vH-5cW" sceneMemberID="viewController">
+                <navigationController title=" -" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="MIa-vH-5cW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" id="DOt-FO-b5w">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -427,6 +426,11 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroudColor">
+                            <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="X5c-Cd-rlb" kind="relationship" relationship="rootViewController" id="5Mt-Fh-tEH"/>
                     </connections>
@@ -480,7 +484,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NBQ-lD-UcO"/>
+        <segue reference="5Mt-Fh-tEH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>

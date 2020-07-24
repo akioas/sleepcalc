@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A2B8D7824CB59280087E503 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B8D7724CB59280087E503 /* Launch Screen.storyboard */; };
 		4A97B66224BB6E4A0037DE73 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97B66124BB6E4A0037DE73 /* SecondScreen.swift */; };
 		4A97B66624BB7AC90037DE73 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97B66524BB7AC90037DE73 /* FirstScreen.swift */; };
 		7835629D23C9025200BE5B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835629C23C9025200BE5B8F /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A2B8D7724CB59280087E503 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4A97B66124BB6E4A0037DE73 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		4A97B66524BB7AC90037DE73 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		7835629923C9025200BE5B8F /* Sleep Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 				7835629E23C9025200BE5B8F /* SceneDelegate.swift */,
 				783562B223C9042B00BE5B8F /* SleepAppViewController.swift */,
 				783562A223C9025200BE5B8F /* Main.storyboard */,
+				4A2B8D7724CB59280087E503 /* Launch Screen.storyboard */,
 				4A97B66524BB7AC90037DE73 /* FirstScreen.swift */,
 				4A97B66124BB6E4A0037DE73 /* SecondScreen.swift */,
 				783562A523C9025500BE5B8F /* Assets.xcassets */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2B8D7824CB59280087E503 /* Launch Screen.storyboard in Resources */,
 				783562A623C9025500BE5B8F /* Assets.xcassets in Resources */,
 				783562A423C9025200BE5B8F /* Main.storyboard in Resources */,
 			);
