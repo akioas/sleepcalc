@@ -75,6 +75,9 @@ class SleepAppViewController: UIViewController {
         var o = 0
         if am == 1{
             var newAmpm = ""
+             let amtext = NSLocalizedString("AM", comment: "AM")
+             let pmtext = NSLocalizedString("PM", comment: "PM")
+            
             if newHours>=12 {
                 newHours = newHours - 12
                 if newHours==0 {
@@ -87,24 +90,24 @@ class SleepAppViewController: UIViewController {
                 }
                 if o == 0 {
                     
-                    if ampm == "PM"{
-                        newAmpm = "AM"
+                    if ampm == "PM" {
+                        newAmpm = amtext
                     }
                     else {
-                        newAmpm = "PM"
+                        newAmpm = pmtext
                     }
                 }
                 else
-                    if ampm == "PM"{
-                        newAmpm = "PM"
+                    if ampm == "PM" {
+                        newAmpm = pmtext
                     }
                     else {
-                        newAmpm = "AM"
+                        newAmpm = amtext
                 }
                 
             }
             else {
-                newAmpm = "AM"
+                newAmpm = amtext
             }
             
             if newMinutes < 10{

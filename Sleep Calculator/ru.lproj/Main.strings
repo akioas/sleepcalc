@@ -1,4 +1,7 @@
 
+/* Class = "UILabel"; text = "9 h"; ObjectID = "3xU-2B-PKm"; */
+"3xU-2B-PKm.text" = "9 h";
+
 /* Class = "UILabel"; text = "00:00"; ObjectID = "4eA-Uk-Abx"; */
 "4eA-Uk-Abx.text" = "00:00";
 
@@ -14,8 +17,17 @@
 /* Class = "UILabel"; text = "00:00"; ObjectID = "Dg2-Yy-3d2"; */
 "Dg2-Yy-3d2.text" = "00:00";
 
+/* Class = "UILabel"; text = "7.5 h"; ObjectID = "FWG-g5-OQj"; */
+"FWG-g5-OQj.text" = "7.5 ч";
+
+/* Class = "UILabel"; text = "7.5 h"; ObjectID = "GSW-Z7-w4p"; */
+"GSW-Z7-w4p.text" = "7.5 ч";
+
+/* Class = "UILabel"; text = "6 h"; ObjectID = "JD2-sK-fo0"; */
+"JD2-sK-fo0.text" = "6 ч";
+
 /* Class = "UIButton"; normalTitle = "when to wake up"; ObjectID = "Kc0-qH-D3g"; */
-"Kc0-qH-D3g.normalTitle" = "when to wake up";
+"Kc0-qH-D3g.normalTitle" = "когда просыпаться";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "L9P-fo-qvK"; */
 "L9P-fo-qvK.text" = "00:00";
@@ -30,10 +42,28 @@
 "NVV-gt-9Pk.text" = "00:00";
 
 /* Class = "UIButton"; normalTitle = "when to go to bed"; ObjectID = "OLc-fA-qiF"; */
-"OLc-fA-qiF.normalTitle" = "when to go to bed";
+"OLc-fA-qiF.normalTitle" = "когда идти спать";
+
+/* Class = "UILabel"; text = "9 h"; ObjectID = "RUT-8E-tcg"; */
+"RUT-8E-tcg.text" = "9 ч";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "Yds-Ds-vZS"; */
 "Yds-Ds-vZS.text" = "00:00";
+
+/* Class = "UILabel"; text = "3 h"; ObjectID = "aIB-fJ-VLV"; */
+"aIB-fJ-VLV.text" = "3 ч";
+
+/* Class = "UILabel"; text = "1.5 h"; ObjectID = "eVm-if-WZV"; */
+"eVm-if-WZV.text" = "1.5 ч";
+
+/* Class = "UILabel"; text = "4.5 h"; ObjectID = "geu-Zt-EsQ"; */
+"geu-Zt-EsQ.text" = "4.5 ч";
+
+/* Class = "UILabel"; text = "6 h"; ObjectID = "kTS-gH-nFK"; */
+"kTS-gH-nFK.text" = "6 ч";
+
+/* Class = "UILabel"; text = "1.5 h"; ObjectID = "lZR-wR-9dE"; */
+"lZR-wR-9dE.text" = "1.5 ч";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "oON-6L-eR7"; */
 "oON-6L-eR7.text" = "00:00";
@@ -52,6 +82,12 @@
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "sf9-I4-VMI"; */
 "sf9-I4-VMI.text" = "00:00";
+
+/* Class = "UILabel"; text = "3 h"; ObjectID = "xcp-1O-QaR"; */
+"xcp-1O-QaR.text" = "3 ч";
+
+/* Class = "UILabel"; text = "4.5 h"; ObjectID = "zBK-aU-iYf"; */
+"zBK-aU-iYf.text" = "4.5 ч";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "zF8-ic-rGd"; */
 "zF8-ic-rGd.text" = "00:00";

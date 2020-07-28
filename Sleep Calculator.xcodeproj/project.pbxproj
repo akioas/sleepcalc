@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A38E5B924CF371E00C27FC7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B8D7724CB59280087E503 /* Launch Screen.storyboard */; };
+		4A38E5BF24D0B47D00C27FC7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A38E5C124D0B47D00C27FC7 /* Localizable.strings */; };
 		4A97B66224BB6E4A0037DE73 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97B66124BB6E4A0037DE73 /* SecondScreen.swift */; };
 		4A97B66624BB7AC90037DE73 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97B66524BB7AC90037DE73 /* FirstScreen.swift */; };
 		7835629D23C9025200BE5B8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7835629C23C9025200BE5B8F /* AppDelegate.swift */; };
@@ -19,8 +20,10 @@
 
 /* Begin PBXFileReference section */
 		4A2B8D7724CB59280087E503 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		4A38E5BB24CF58BD00C27FC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		4A38E5BC24CF5A8100C27FC7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		4A38E5BB24CF58BD00C27FC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
+		4A38E5C024D0B47D00C27FC7 /* en */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4A38E5C324D0B49F00C27FC7 /* ru */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4A38E5C524D0C09C00C27FC7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		4A97B66124BB6E4A0037DE73 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		4A97B66524BB7AC90037DE73 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		7835629923C9025200BE5B8F /* Sleep Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +69,7 @@
 				7835629E23C9025200BE5B8F /* SceneDelegate.swift */,
 				783562B223C9042B00BE5B8F /* SleepAppViewController.swift */,
 				783562A223C9025200BE5B8F /* Main.storyboard */,
+				4A38E5C124D0B47D00C27FC7 /* Localizable.strings */,
 				4A97B66524BB7AC90037DE73 /* FirstScreen.swift */,
 				4A97B66124BB6E4A0037DE73 /* SecondScreen.swift */,
 				783562A523C9025500BE5B8F /* Assets.xcassets */,
@@ -135,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A38E5B924CF371E00C27FC7 /* Launch Screen.storyboard in Resources */,
+				4A38E5BF24D0B47D00C27FC7 /* Localizable.strings in Resources */,
 				783562A623C9025500BE5B8F /* Assets.xcassets in Resources */,
 				783562A423C9025200BE5B8F /* Main.storyboard in Resources */,
 			);
@@ -158,12 +163,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4A38E5C124D0B47D00C27FC7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A38E5C024D0B47D00C27FC7 /* en */,
+				4A38E5C324D0B49F00C27FC7 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		783562A223C9025200BE5B8F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				783562A323C9025200BE5B8F /* Base */,
 				4A38E5BB24CF58BD00C27FC7 /* en */,
-				4A38E5BC24CF5A8100C27FC7 /* ru */,
+				4A38E5C524D0C09C00C27FC7 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -291,8 +305,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 28P4VGRC5F;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Sleep Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.K.Sleep-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +326,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28P4VGRC5F;
 				INFOPLIST_FILE = "Sleep Calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.K.Sleep-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

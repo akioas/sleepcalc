@@ -80,20 +80,22 @@ class SecondScreen: UIViewController {
         }
         if am == 1{
             var newAmpm = ""
+            let amtext = NSLocalizedString("AM", comment: "AM")
+            let pmtext = NSLocalizedString("PM", comment: "PM")
             if newHours<0 {
                 newHours = newHours + 12
                 if newHours==0 {
                     newHours = 12
                 }
                 if ampm == "PM"{
-                    newAmpm = "AM"
+                    newAmpm = amtext
                 }
                 else {
-                    newAmpm = "PM"
+                    newAmpm = pmtext
                 }
             }
             else {
-                newAmpm = "AM"
+                newAmpm = amtext
             }
             if newMinutes < 10{
                 self.clocks[cycle-1]!.text = "\(newHours):0\(newMinutes) \(newAmpm)"
