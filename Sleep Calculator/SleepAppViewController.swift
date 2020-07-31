@@ -11,6 +11,12 @@ class SleepAppViewController: UIViewController {
     @IBOutlet weak var fourthCycleClock: UILabel!
     @IBOutlet weak var fifthCycleClock: UILabel!
     @IBOutlet weak var sixthCycleClock: UILabel!
+    
+    @IBOutlet weak var backButton: UIButton!
+
+    @IBAction func doBack(sender: UIButton) {
+        _ = navigationController?.popViewController(animated: true)
+    }
 
     
     var timer = Timer()
@@ -26,10 +32,7 @@ class SleepAppViewController: UIViewController {
         4: fifthCycleClock,
         5: sixthCycleClock,
         ]
-        
         self.tick()
-
-        
     }
    
     
@@ -42,8 +45,6 @@ class SleepAppViewController: UIViewController {
         let dateString = formatter.string(from: Date())
         
         let time = dateString.split(separator: ":")
-        print(time[0])
-        print(time[1])
         
         
         let newDataString = formatter.string(from: Date())
@@ -55,8 +56,6 @@ class SleepAppViewController: UIViewController {
         hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 375, cycle: 4, ampm: newDataString)
         hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 465, cycle: 5, ampm: newDataString)
         hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 555, cycle: 6, ampm: newDataString)
-        
-        
     }
     func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, cycle: Int, ampm: String) {
         var newMinutes = timetoadd+minutes
