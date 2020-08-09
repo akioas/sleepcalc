@@ -18,7 +18,8 @@ class SleepAppViewController: UIViewController {
         _ = navigationController?.popViewController(animated: true)
     }
 
-    
+    var lastHour = 99
+    var lastMinute = 99
     var timer = Timer()
     var clocks: Dictionary<Int, UILabel> = [:]
     override func viewDidLoad() {
@@ -50,12 +51,17 @@ class SleepAppViewController: UIViewController {
         let newDataString = formatter.string(from: Date())
         let hours = Int(time[0])
         let minutes = Int(time[1])
-        hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 105, cycle: 1, ampm: newDataString)
-        hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 195, cycle: 2, ampm: newDataString)
-        hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 285, cycle: 3, ampm: newDataString)
-        hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 375, cycle: 4, ampm: newDataString)
-        hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 465, cycle: 5, ampm: newDataString)
-        hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 555, cycle: 6, ampm: newDataString)
+        if hours != lastHour || minutes != lastMinute {
+                   print(hours!, minutes!)
+                   lastHour = hours!
+                   lastMinute = minutes!
+                    hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 105, cycle: 1, ampm: newDataString)
+                    hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 195, cycle: 2, ampm: newDataString)
+                    hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 285, cycle: 3, ampm: newDataString)
+                    hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 375, cycle: 4, ampm: newDataString)
+                    hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 465, cycle: 5, ampm: newDataString)
+                    hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 555, cycle: 6, ampm: newDataString)
+        }
     }
     func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, cycle: Int, ampm: String) {
         var newMinutes = timetoadd+minutes
