@@ -363,7 +363,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLc-fA-qiF">
-                                <rect key="frame" x="20" y="384.5" width="367" height="422.5"/>
+                                <rect key="frame" x="0.0" y="418" width="414" height="422.5"/>
                                 <color key="backgroundColor" red="0.1107303635" green="0.11181008420000001" blue="0.27287079019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="19"/>
                                 <state key="normal" title="when to go to bed" backgroundImage="moon.zzz.fill" catalog="system">
@@ -374,7 +374,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-qH-D3g" colorLabel="IBBuiltInLabel-Gray">
-                                <rect key="frame" x="20" y="9.5" width="374" height="345"/>
+                                <rect key="frame" x="0.0" y="-0.5" width="414" height="421.5"/>
                                 <color key="backgroundColor" red="0.11073036351584049" green="0.11181008415269277" blue="0.27287079015544047" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="19"/>
                                 <state key="normal" title="when to wake up" backgroundImage="sun.max.fill" catalog="system">
@@ -387,14 +387,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.26728971960590014" green="0.26121495329346778" blue="0.65000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="width" secondItem="GLJ-yN-YO0" secondAttribute="width" multiplier="0.5" constant="167" id="2gT-3J-OfL"/>
-                            <constraint firstItem="ECG-0F-nK6" firstAttribute="bottom" secondItem="OLc-fA-qiF" secondAttribute="bottom" constant="-0.5" id="3GF-zY-o0Z"/>
-                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="height" secondItem="GLJ-yN-YO0" secondAttribute="height" multiplier="0.5" constant="-76.5" id="3Xb-oV-B1p"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="leading" secondItem="GLJ-yN-YO0" secondAttribute="leadingMargin" id="KiG-NC-tym"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="height" secondItem="GLJ-yN-YO0" secondAttribute="height" multiplier="0.5" id="LQa-ln-VdN"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="width" secondItem="GLJ-yN-YO0" secondAttribute="width" multiplier="0.5" constant="160" id="atW-jL-L92"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="top" secondItem="Kc0-qH-D3g" secondAttribute="bottom" constant="33" id="weh-Ri-LGY"/>
-                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="trailing" secondItem="GLJ-yN-YO0" secondAttribute="trailingMargin" id="xOv-yw-ec9"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="leading" secondItem="ECG-0F-nK6" secondAttribute="leading" id="3I3-7f-r7G"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="centerX" secondItem="ECG-0F-nK6" secondAttribute="centerX" id="5z8-I1-Rdh"/>
+                            <constraint firstAttribute="bottom" secondItem="OLc-fA-qiF" secondAttribute="bottom" id="A8g-N5-Pwt"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="height" secondItem="GLJ-yN-YO0" secondAttribute="height" multiplier="0.5" id="GTV-e7-gNw"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="top" secondItem="ECG-0F-nK6" secondAttribute="top" id="hko-nA-cVK"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="width" secondItem="GLJ-yN-YO0" secondAttribute="width" id="keW-mW-LLP"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="leading" secondItem="ECG-0F-nK6" secondAttribute="leading" id="o1Q-d9-VJR"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="height" secondItem="GLJ-yN-YO0" secondAttribute="height" multiplier="0.5" id="phq-la-fg7"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="centerX" secondItem="ECG-0F-nK6" secondAttribute="centerX" id="snZ-Zq-8Ck"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="width" secondItem="GLJ-yN-YO0" secondAttribute="width" id="yXU-uk-mC9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ECG-0F-nK6"/>
                     </view>
