@@ -363,7 +363,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLc-fA-qiF">
-                                <rect key="frame" x="32" y="426.5" width="362" height="375"/>
+                                <rect key="frame" x="20" y="384.5" width="367" height="422.5"/>
                                 <color key="backgroundColor" red="0.1107303635" green="0.11181008420000001" blue="0.27287079019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="19"/>
                                 <state key="normal" title="when to go to bed" backgroundImage="moon.zzz.fill" catalog="system">
@@ -373,12 +373,9 @@
                                     <segue destination="2zs-Th-kfN" kind="show" id="oug-dw-UrR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-qH-D3g" colorLabel="IBBuiltInLabel-Gray">
-                                <rect key="frame" x="32" y="38" width="362" height="354.66666666666669"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-qH-D3g" colorLabel="IBBuiltInLabel-Gray">
+                                <rect key="frame" x="20" y="9.5" width="374" height="345"/>
                                 <color key="backgroundColor" red="0.11073036351584049" green="0.11181008415269277" blue="0.27287079015544047" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="354.5" id="poz-bA-Kyh"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="19"/>
                                 <state key="normal" title="when to wake up" backgroundImage="sun.max.fill" catalog="system">
                                     <color key="titleColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -390,15 +387,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.26728971960590014" green="0.26121495329346778" blue="0.65000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="leading" secondItem="ECG-0F-nK6" secondAttribute="leading" constant="32" id="JFh-Pf-gMK"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="height" relation="greaterThanOrEqual" secondItem="Kc0-qH-D3g" secondAttribute="height" priority="800" constant="200" id="KFQ-mx-gvY"/>
-                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="OLc-fA-qiF" secondAttribute="bottom" constant="5" id="Kj1-3q-E3T"/>
-                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="trailing" secondItem="GLJ-yN-YO0" secondAttribute="trailingMargin" id="NtM-Fw-jOY"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="trailing" secondItem="Kc0-qH-D3g" secondAttribute="trailing" id="TYp-tA-thz"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="width" relation="greaterThanOrEqual" secondItem="Kc0-qH-D3g" secondAttribute="width" priority="800" constant="200" id="hfL-7W-eir"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="leading" secondItem="Kc0-qH-D3g" secondAttribute="leading" id="spZ-SP-I7Y"/>
-                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ECG-0F-nK6" secondAttribute="top" constant="5" id="wKT-bV-lId"/>
-                            <constraint firstItem="OLc-fA-qiF" firstAttribute="top" secondItem="Kc0-qH-D3g" secondAttribute="bottom" constant="70" id="wiP-rf-v4S"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="width" secondItem="GLJ-yN-YO0" secondAttribute="width" multiplier="0.5" constant="167" id="2gT-3J-OfL"/>
+                            <constraint firstItem="ECG-0F-nK6" firstAttribute="bottom" secondItem="OLc-fA-qiF" secondAttribute="bottom" constant="-0.5" id="3GF-zY-o0Z"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="height" secondItem="GLJ-yN-YO0" secondAttribute="height" multiplier="0.5" constant="-76.5" id="3Xb-oV-B1p"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="leading" secondItem="GLJ-yN-YO0" secondAttribute="leadingMargin" id="KiG-NC-tym"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="height" secondItem="GLJ-yN-YO0" secondAttribute="height" multiplier="0.5" id="LQa-ln-VdN"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="width" secondItem="GLJ-yN-YO0" secondAttribute="width" multiplier="0.5" constant="160" id="atW-jL-L92"/>
+                            <constraint firstItem="OLc-fA-qiF" firstAttribute="top" secondItem="Kc0-qH-D3g" secondAttribute="bottom" constant="33" id="weh-Ri-LGY"/>
+                            <constraint firstItem="Kc0-qH-D3g" firstAttribute="trailing" secondItem="GLJ-yN-YO0" secondAttribute="trailingMargin" id="xOv-yw-ec9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ECG-0F-nK6"/>
                     </view>
