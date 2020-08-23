@@ -24,7 +24,7 @@
 		4A38E5BB24CF58BD00C27FC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
 		4A38E5C024D0B47D00C27FC7 /* en */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4A38E5C324D0B49F00C27FC7 /* ru */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4A38E5C524D0C09C00C27FC7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		4A8E808B24F2D872001F7541 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		4A97B66124BB6E4A0037DE73 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		4A97B66524BB7AC90037DE73 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		7835629923C9025200BE5B8F /* Sleep Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +181,7 @@
 			children = (
 				783562A323C9025200BE5B8F /* Base */,
 				4A38E5BB24CF58BD00C27FC7 /* en */,
-				4A38E5C524D0C09C00C27FC7 /* ru */,
+				4A8E808B24F2D872001F7541 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
