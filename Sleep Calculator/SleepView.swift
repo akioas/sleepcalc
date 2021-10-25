@@ -17,10 +17,11 @@ class firstScreen: UIViewController {
     @IBAction func doBack(sender: UIButton) {
         _ = navigationController?.popViewController(animated: true)
     }
-
+}
 
 // 2 экран
-class SecondScreen: UIViewController {
+
+class secondScreen: UIViewController {
     @IBOutlet weak var twoFirstCycleClock: UILabel!
     @IBOutlet weak var twoSecondCycleClock: UILabel!
     @IBOutlet weak var twoThirdCycleClock: UILabel!
@@ -36,3 +37,4 @@ class SecondScreen: UIViewController {
 //    @IBAction func doBack(sender: UIButton) {
 //        _ = navigationController?.popViewController(animated: true)
 //    }
+}

@@ -326,6 +326,14 @@
                         <outlet property="sixthCycleClock" destination="F9j-FY-N5i" id="usj-nM-NC0"/>
                         <outlet property="thirdCycleClock" destination="Fm5-R6-Icl" id="fkE-u3-l3S"/>
                         <outlet property="timePicker" destination="MdR-Y6-1R2" id="zWe-xD-IlQ"/>
+                        <outlet property="twoBackButton" destination="3mW-9K-cFa" id="syX-aO-Jc4"/>
+                        <outlet property="twoFifthCycleClock" destination="jn7-Q6-WaH" id="7Gb-gV-NBN"/>
+                        <outlet property="twoFirstCycleClock" destination="4oO-dN-HKO" id="rMo-LX-krh"/>
+                        <outlet property="twoFourthCycleClock" destination="ztv-Du-UTW" id="y5m-Na-nNc"/>
+                        <outlet property="twoSecondCycleClock" destination="dgY-jU-b7N" id="Nba-gs-1Jq"/>
+                        <outlet property="twoSixthCycleClock" destination="F9j-FY-N5i" id="vGk-Lo-Q46"/>
+                        <outlet property="twoThirdCycleClock" destination="Fm5-R6-Icl" id="6ue-aC-axi"/>
+                        <outlet property="twoTimePicker" destination="MdR-Y6-1R2" id="a1P-nj-tC6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U85-cY-oTK" sceneMemberID="firstResponder"/>
