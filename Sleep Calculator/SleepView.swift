@@ -4,18 +4,15 @@ import UIKit
 // 1 экран
 
 class firstScreen: UIViewController {
-    @IBOutlet weak var firstCycleClock: UILabel!
-    @IBOutlet weak var secondCycleClock: UILabel!
-    @IBOutlet weak var thirdCycleClock: UILabel!
-    @IBOutlet weak var fourthCycleClock: UILabel!
-    @IBOutlet weak var fifthCycleClock: UILabel!
-    @IBOutlet weak var sixthCycleClock: UILabel!
+    @IBOutlet weak var oneFirstCycleClock: UILabel!
+    @IBOutlet weak var oneSecondCycleClock: UILabel!
+    @IBOutlet weak var oneThirdCycleClock: UILabel!
+    @IBOutlet weak var oneFourthCycleClock: UILabel!
+    @IBOutlet weak var oneFifthCycleClock: UILabel!
+    @IBOutlet weak var oneSixthCycleClock: UILabel!
     
     
-    
-    @IBOutlet weak var timePicker: UIDatePicker!
-    
-    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var oneBackButton: UIButton!
 
     @IBAction func doBack(sender: UIButton) {
         _ = navigationController?.popViewController(animated: true)
@@ -24,19 +21,18 @@ class firstScreen: UIViewController {
 
 // 2 экран
 class SecondScreen: UIViewController {
-    @IBOutlet weak var firstCycleClock: UILabel!
-    @IBOutlet weak var secondCycleClock: UILabel!
-    @IBOutlet weak var thirdCycleClock: UILabel!
-    @IBOutlet weak var fourthCycleClock: UILabel!
-    @IBOutlet weak var fifthCycleClock: UILabel!
-    @IBOutlet weak var sixthCycleClock: UILabel!
+    @IBOutlet weak var twoFirstCycleClock: UILabel!
+    @IBOutlet weak var twoSecondCycleClock: UILabel!
+    @IBOutlet weak var twoThirdCycleClock: UILabel!
+    @IBOutlet weak var twoFourthCycleClock: UILabel!
+    @IBOutlet weak var twoFifthCycleClock: UILabel!
+    @IBOutlet weak var twoSixthCycleClock: UILabel!
+        
     
+    @IBOutlet weak var twoTimePicker: UIDatePicker!
     
-    
-    @IBOutlet weak var timePicker: UIDatePicker!
-    
-    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var twoBackButton: UIButton!
 
-    @IBAction func doBack(sender: UIButton) {
-        _ = navigationController?.popViewController(animated: true)
-    }
+//    @IBAction func doBack(sender: UIButton) {
+//        _ = navigationController?.popViewController(animated: true)
+//    }
