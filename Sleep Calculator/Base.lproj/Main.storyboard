@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f6x-AC-wll">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -62,7 +62,7 @@
                                 <color key="tintColor" systemColor="systemGray2Color"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="9 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bb1-1T-WRH">
-                                <rect key="frame" x="33" y="735" width="79" height="56"/>
+                                <rect key="frame" x="33" y="735" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -72,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="7.5 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i3X-i7-GtZ">
-                                <rect key="frame" x="33" y="624" width="79" height="56"/>
+                                <rect key="frame" x="33" y="624" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -82,7 +82,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="3 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PK7-mq-efT">
-                                <rect key="frame" x="33" y="291" width="79" height="56"/>
+                                <rect key="frame" x="33" y="291" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -92,14 +92,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="1.5 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ApR-iP-3Hh">
-                                <rect key="frame" x="33" y="179" width="79" height="57"/>
+                                <rect key="frame" x="33" y="179" width="78" height="57"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="6 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6yx-mX-jjP">
-                                <rect key="frame" x="33" y="512" width="79" height="56"/>
+                                <rect key="frame" x="33" y="512" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -109,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="4.5 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RNa-hg-Qj3">
-                                <rect key="frame" x="33" y="401" width="79" height="57"/>
+                                <rect key="frame" x="33" y="401" width="78" height="57"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -148,6 +148,13 @@
                         <outlet property="fifthCycleClock" destination="Nc0-tK-kSW" id="K1f-6A-ef9"/>
                         <outlet property="firstCycleClock" destination="UxC-NV-bXW" id="0Tk-Rx-Hrt"/>
                         <outlet property="fourthCycleClock" destination="GcK-Ab-VM5" id="dCt-FC-sdP"/>
+                        <outlet property="oneBackButton" destination="IHa-6Q-Wyw" id="VGw-dM-2rK"/>
+                        <outlet property="oneFifthCycleClock" destination="Nc0-tK-kSW" id="a6K-FT-lR2"/>
+                        <outlet property="oneFirstCycleClock" destination="UxC-NV-bXW" id="cQD-Nj-eht"/>
+                        <outlet property="oneFourthCycleClock" destination="GcK-Ab-VM5" id="VLn-q8-eLB"/>
+                        <outlet property="oneSecondCycleClock" destination="tCC-3O-Dm4" id="fKs-Ap-QeC"/>
+                        <outlet property="oneSixthCycleClock" destination="OAm-8Q-PTn" id="RKA-Dt-v3X"/>
+                        <outlet property="oneThirdCycleClock" destination="Zuk-gc-j8I" id="jbW-mF-utL"/>
                         <outlet property="secondCycleClock" destination="tCC-3O-Dm4" id="ViH-Mz-0ow"/>
                         <outlet property="sixthCycleClock" destination="OAm-8Q-PTn" id="e49-yR-Di3"/>
                         <outlet property="thirdCycleClock" destination="Zuk-gc-j8I" id="Fp1-XM-yO8"/>
@@ -166,7 +173,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-Y6-1R2">
-                                <rect key="frame" x="142" y="47" width="234" height="56"/>
+                                <rect key="frame" x="141" y="47" width="235" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemTealColor"/>
@@ -238,7 +245,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-kk-1lD">
-                                <rect key="frame" x="35" y="735" width="79" height="56"/>
+                                <rect key="frame" x="35" y="735" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -248,7 +255,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7.5 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grh-0F-rhp">
-                                <rect key="frame" x="35" y="624" width="79" height="56"/>
+                                <rect key="frame" x="35" y="624" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -258,7 +265,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tGY-Rj-t0p">
-                                <rect key="frame" x="35" y="512" width="79" height="56"/>
+                                <rect key="frame" x="35" y="512" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -268,7 +275,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4.5 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kHU-jO-ADe">
-                                <rect key="frame" x="35" y="401" width="79" height="57"/>
+                                <rect key="frame" x="35" y="401" width="78" height="57"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -278,7 +285,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvg-1Z-ngW">
-                                <rect key="frame" x="35" y="291" width="79" height="56"/>
+                                <rect key="frame" x="35" y="291" width="78" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -288,7 +295,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.5 h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIJ-Lg-H7h">
-                                <rect key="frame" x="35" y="179" width="79" height="57"/>
+                                <rect key="frame" x="35" y="179" width="78" height="57"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -326,14 +333,14 @@
                         <outlet property="sixthCycleClock" destination="F9j-FY-N5i" id="usj-nM-NC0"/>
                         <outlet property="thirdCycleClock" destination="Fm5-R6-Icl" id="fkE-u3-l3S"/>
                         <outlet property="timePicker" destination="MdR-Y6-1R2" id="zWe-xD-IlQ"/>
-                        <outlet property="twoBackButton" destination="3mW-9K-cFa" id="syX-aO-Jc4"/>
-                        <outlet property="twoFifthCycleClock" destination="jn7-Q6-WaH" id="7Gb-gV-NBN"/>
-                        <outlet property="twoFirstCycleClock" destination="4oO-dN-HKO" id="rMo-LX-krh"/>
-                        <outlet property="twoFourthCycleClock" destination="ztv-Du-UTW" id="y5m-Na-nNc"/>
-                        <outlet property="twoSecondCycleClock" destination="dgY-jU-b7N" id="Nba-gs-1Jq"/>
-                        <outlet property="twoSixthCycleClock" destination="F9j-FY-N5i" id="vGk-Lo-Q46"/>
-                        <outlet property="twoThirdCycleClock" destination="Fm5-R6-Icl" id="6ue-aC-axi"/>
-                        <outlet property="twoTimePicker" destination="MdR-Y6-1R2" id="a1P-nj-tC6"/>
+                        <outlet property="twoBackButton" destination="3mW-9K-cFa" id="DYN-4o-Gry"/>
+                        <outlet property="twoFifthCycleClock" destination="jn7-Q6-WaH" id="uKR-HZ-Iia"/>
+                        <outlet property="twoFirstCycleClock" destination="4oO-dN-HKO" id="UjL-Fx-WO0"/>
+                        <outlet property="twoFourthCycleClock" destination="ztv-Du-UTW" id="9nZ-Js-EAL"/>
+                        <outlet property="twoSecondCycleClock" destination="dgY-jU-b7N" id="VZ7-OA-9Wj"/>
+                        <outlet property="twoSixthCycleClock" destination="F9j-FY-N5i" id="sRq-qB-3el"/>
+                        <outlet property="twoThirdCycleClock" destination="Fm5-R6-Icl" id="9bF-Sy-iAm"/>
+                        <outlet property="twoTimePicker" destination="MdR-Y6-1R2" id="1FE-g5-58h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U85-cY-oTK" sceneMemberID="firstResponder"/>
@@ -369,16 +376,16 @@
             </objects>
             <point key="canvasLocation" x="-1125" y="157"/>
         </scene>
-        <!--Main Screen-->
+        <!--Main-->
         <scene sceneID="QUe-bD-UqC">
             <objects>
-                <viewController id="f6x-AC-wll" customClass="mainScreen" sceneMemberID="viewController">
+                <viewController id="f6x-AC-wll" customClass="Main" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rv6-wH-3O7" customClass="S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOd-dG-t3h">
-                                <rect key="frame" x="37" y="458" width="334" height="338"/>
+                                <rect key="frame" x="37" y="458" width="333" height="338"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.1107303635" green="0.11181008420000001" blue="0.27287079019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <rect key="contentStretch" x="0.34999999999999998" y="0.40000000000000002" width="1" height="1"/>
@@ -391,7 +398,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6S-P9-9DK" colorLabel="IBBuiltInLabel-Gray">
-                                <rect key="frame" x="37" y="56" width="333" height="336"/>
+                                <rect key="frame" x="37" y="56" width="332" height="336"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1107303635" green="0.11181008420000001" blue="0.27287079019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="19"/>
@@ -399,7 +406,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jdK-5Z-3q7" kind="show" id="jdq-3E-FHf"/>
+                                    <segue destination="jdK-5Z-3q7" kind="show" id="7nK-t8-gMk"/>
                                 </connections>
                             </button>
                         </subviews>

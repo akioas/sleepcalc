@@ -11,23 +11,11 @@
 		4A3D5EC1272315B30027B8BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC0272315B30027B8BE /* SceneDelegate.swift */; };
 		4A3D5EC3272315B30027B8BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC2272315B30027B8BE /* ViewController.swift */; };
 		4A3D5EC6272315B30027B8BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC4272315B30027B8BE /* Main.storyboard */; };
-		4A3D5ED3272315F10027B8BE /* SleepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5ED2272315F10027B8BE /* SleepController.swift */; };
-		4A3D5ED5272315FE0027B8BE /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5ED4272315FE0027B8BE /* SleepView.swift */; };
-		4A3D5ED7272316090027B8BE /* SleepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5ED6272316090027B8BE /* SleepModel.swift */; };
+		4A3D5ED7272316090027B8BE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5ED6272316090027B8BE /* Model.swift */; };
 		4A3D5EEC272316D90027B8BE /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EE7272316D90027B8BE /* MainNavigationController.swift */; };
 		4A3D5EED272316D90027B8BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EE8272316D90027B8BE /* README.md */; };
 		4A3D5EFE27231A910027B8BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EFD27231A910027B8BE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4A3D5EE4272316D80027B8BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4A3D5EE0272316D80027B8BE /* Sleep Calculator.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7835629923C9025200BE5B8F;
-			remoteInfo = "Sleep Calculator";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4A3D5EBB272315B30027B8BE /* Sleep Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,16 +24,11 @@
 		4A3D5EC2272315B30027B8BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A3D5EC5272315B30027B8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A3D5ECC272315B50027B8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A3D5ED2272315F10027B8BE /* SleepController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepController.swift; sourceTree = "<group>"; };
-		4A3D5ED4272315FE0027B8BE /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
-		4A3D5ED6272316090027B8BE /* SleepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepModel.swift; sourceTree = "<group>"; };
-		4A3D5EE0272316D80027B8BE /* Sleep Calculator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Sleep Calculator.xcodeproj"; path = "../../../projects/sleepcalc/src/Sleep Calculator.xcodeproj"; sourceTree = "<group>"; };
+		4A3D5ED6272316090027B8BE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4A3D5EE7272316D90027B8BE /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		4A3D5EE8272316D90027B8BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4A3D5EF0272318B70027B8BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Main.strings; sourceTree = "<group>"; };
 		4A3D5EF2272318B70027B8BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
-		4A3D5EF8272318CD0027B8BE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Main.strings; sourceTree = "<group>"; };
-		4A3D5EFA272318CD0027B8BE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Localizable.strings; sourceTree = "<group>"; };
 		4A3D5EFB272318DE0027B8BE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4A3D5EFD27231A910027B8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,29 +65,17 @@
 			children = (
 				4A3D5EBE272315B30027B8BE /* AppDelegate.swift */,
 				4A3D5EC0272315B30027B8BE /* SceneDelegate.swift */,
-				4A3D5ED6272316090027B8BE /* SleepModel.swift */,
-				4A3D5ED4272315FE0027B8BE /* SleepView.swift */,
-				4A3D5ED2272315F10027B8BE /* SleepController.swift */,
+				4A3D5ED6272316090027B8BE /* Model.swift */,
 				4A3D5EC2272315B30027B8BE /* ViewController.swift */,
 				4A3D5EFB272318DE0027B8BE /* Launch Screen.storyboard */,
 				4A3D5EE7272316D90027B8BE /* MainNavigationController.swift */,
-				4A3D5EF6272318CD0027B8BE /* ru.lproj */,
 				4A3D5EEE272318B70027B8BE /* en.lproj */,
 				4A3D5EE8272316D90027B8BE /* README.md */,
-				4A3D5EE0272316D80027B8BE /* Sleep Calculator.xcodeproj */,
 				4A3D5EC4272315B30027B8BE /* Main.storyboard */,
 				4A3D5EFD27231A910027B8BE /* Assets.xcassets */,
 				4A3D5ECC272315B50027B8BE /* Info.plist */,
 			);
 			path = "Sleep Calculator";
-			sourceTree = "<group>";
-		};
-		4A3D5EE1272316D80027B8BE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4A3D5EE5272316D80027B8BE /* Sleep Calculator.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4A3D5EEE272318B70027B8BE /* en.lproj */ = {
@@ -114,16 +85,6 @@
 				4A3D5EF1272318B70027B8BE /* Localizable.strings */,
 			);
 			path = en.lproj;
-			sourceTree = "<group>";
-		};
-		4A3D5EF6272318CD0027B8BE /* ru.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				4A3D5EF7272318CD0027B8BE /* Main.strings */,
-				4A3D5EF9272318CD0027B8BE /* Localizable.strings */,
-			);
-			name = ru.lproj;
-			path = "Sleep Calculator/ru.lproj";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,28 +133,12 @@
 			mainGroup = 4A3D5EB2272315B30027B8BE;
 			productRefGroup = 4A3D5EBC272315B30027B8BE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4A3D5EE1272316D80027B8BE /* Products */;
-					ProjectRef = 4A3D5EE0272316D80027B8BE /* Sleep Calculator.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4A3D5EBA272315B30027B8BE /* Sleep Calculator */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4A3D5EE5272316D80027B8BE /* Sleep Calculator.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Sleep Calculator.app";
-			remoteRef = 4A3D5EE4272316D80027B8BE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4A3D5EB9272315B30027B8BE /* Resources */ = {
@@ -214,11 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A3D5EC3272315B30027B8BE /* ViewController.swift in Sources */,
-				4A3D5ED7272316090027B8BE /* SleepModel.swift in Sources */,
-				4A3D5ED3272315F10027B8BE /* SleepController.swift in Sources */,
+				4A3D5ED7272316090027B8BE /* Model.swift in Sources */,
 				4A3D5EBF272315B30027B8BE /* AppDelegate.swift in Sources */,
 				4A3D5EEC272316D90027B8BE /* MainNavigationController.swift in Sources */,
-				4A3D5ED5272315FE0027B8BE /* SleepView.swift in Sources */,
 				4A3D5EC1272315B30027B8BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,22 +189,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4A3D5EF2272318B70027B8BE /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		4A3D5EF7272318CD0027B8BE /* Main.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A3D5EF8272318CD0027B8BE /* ru */,
-			);
-			name = Main.strings;
-			sourceTree = "<group>";
-		};
-		4A3D5EF9272318CD0027B8BE /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A3D5EFA272318CD0027B8BE /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
