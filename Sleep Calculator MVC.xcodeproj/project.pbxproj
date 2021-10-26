@@ -15,6 +15,14 @@
 		4A3D5EEC272316D90027B8BE /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EE7272316D90027B8BE /* MainNavigationController.swift */; };
 		4A3D5EED272316D90027B8BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EE8272316D90027B8BE /* README.md */; };
 		4A3D5EFE27231A910027B8BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EFD27231A910027B8BE /* Assets.xcassets */; };
+		4ABB89A127272EE70096E5DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC2272315B30027B8BE /* ViewController.swift */; };
+		4ABB89A227272EE70096E5DC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5ED6272316090027B8BE /* Model.swift */; };
+		4ABB89A327272EE70096E5DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EBE272315B30027B8BE /* AppDelegate.swift */; };
+		4ABB89A427272EE70096E5DC /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EE7272316D90027B8BE /* MainNavigationController.swift */; };
+		4ABB89A527272EE70096E5DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC0272315B30027B8BE /* SceneDelegate.swift */; };
+		4ABB89A827272EE70096E5DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EE8272316D90027B8BE /* README.md */; };
+		4ABB89A927272EE70096E5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EFD27231A910027B8BE /* Assets.xcassets */; };
+		4ABB89AA27272EE70096E5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC4272315B30027B8BE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +39,19 @@
 		4A3D5EF2272318B70027B8BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		4A3D5EFB272318DE0027B8BE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4A3D5EFD27231A910027B8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4ABB89AE27272EE70096E5DC /* Sleep Calculator copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ABB89AF27272EE70096E5DC /* Sleep Calculator copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sleep Calculator copy-Info.plist"; path = "/Users/katya/Desktop/Sleep Calculator/Sleep Calculator copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4A3D5EB8272315B30027B8BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ABB89A627272EE70096E5DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +66,7 @@
 			children = (
 				4A3D5EBD272315B30027B8BE /* Sleep Calculator */,
 				4A3D5EBC272315B30027B8BE /* Products */,
+				4ABB89AF27272EE70096E5DC /* Sleep Calculator copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4A3D5EBB272315B30027B8BE /* Sleep Calculator.app */,
+				4ABB89AE27272EE70096E5DC /* Sleep Calculator copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +126,23 @@
 			productReference = 4A3D5EBB272315B30027B8BE /* Sleep Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4ABB899F27272EE70096E5DC /* Sleep Calculator copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4ABB89AB27272EE70096E5DC /* Build configuration list for PBXNativeTarget "Sleep Calculator copy" */;
+			buildPhases = (
+				4ABB89A027272EE70096E5DC /* Sources */,
+				4ABB89A627272EE70096E5DC /* Frameworks */,
+				4ABB89A727272EE70096E5DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sleep Calculator copy";
+			productName = "Sleep Calculator";
+			productReference = 4ABB89AE27272EE70096E5DC /* Sleep Calculator copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -121,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4A3D5EB6272315B30027B8BE /* Build configuration list for PBXProject "Sleep Calculator" */;
+			buildConfigurationList = 4A3D5EB6272315B30027B8BE /* Build configuration list for PBXProject "Sleep Calculator MVC" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,6 +172,7 @@
 			projectRoot = "";
 			targets = (
 				4A3D5EBA272315B30027B8BE /* Sleep Calculator */,
+				4ABB899F27272EE70096E5DC /* Sleep Calculator copy */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +188,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4ABB89A727272EE70096E5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABB89A827272EE70096E5DC /* README.md in Resources */,
+				4ABB89A927272EE70096E5DC /* Assets.xcassets in Resources */,
+				4ABB89AA27272EE70096E5DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -163,6 +210,18 @@
 				4A3D5EBF272315B30027B8BE /* AppDelegate.swift in Sources */,
 				4A3D5EEC272316D90027B8BE /* MainNavigationController.swift in Sources */,
 				4A3D5EC1272315B30027B8BE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4ABB89A027272EE70096E5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ABB89A127272EE70096E5DC /* ViewController.swift in Sources */,
+				4ABB89A227272EE70096E5DC /* Model.swift in Sources */,
+				4ABB89A327272EE70096E5DC /* AppDelegate.swift in Sources */,
+				4ABB89A427272EE70096E5DC /* MainNavigationController.swift in Sources */,
+				4ABB89A527272EE70096E5DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +407,46 @@
 			};
 			name = Release;
 		};
+		4ABB89AC27272EE70096E5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sleep Calculator copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "A.Sleep-Calculator-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4ABB89AD27272EE70096E5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Sleep Calculator copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "A.Sleep-Calculator-MVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4A3D5EB6272315B30027B8BE /* Build configuration list for PBXProject "Sleep Calculator" */ = {
+		4A3D5EB6272315B30027B8BE /* Build configuration list for PBXProject "Sleep Calculator MVC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4A3D5ECD272315B50027B8BE /* Debug */,
@@ -365,6 +460,15 @@
 			buildConfigurations = (
 				4A3D5ED0272315B50027B8BE /* Debug */,
 				4A3D5ED1272315B50027B8BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ABB89AB27272EE70096E5DC /* Build configuration list for PBXNativeTarget "Sleep Calculator copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ABB89AC27272EE70096E5DC /* Debug */,
+				4ABB89AD27272EE70096E5DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
