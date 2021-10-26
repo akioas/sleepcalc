@@ -126,6 +126,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlH-La-mdE">
+                                <rect key="frame" x="33" y="30" width="87" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="45"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doBack:" destination="jdK-5Z-3q7" eventType="touchUpInside" id="5RE-A5-u87"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ViC-Nd-NRY"/>
                         <color key="backgroundColor" red="0.26609375000000002" green="0.26000000000000001" blue="0.65000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -148,7 +159,7 @@
         <!--secondScreen-->
         <scene sceneID="ny5-wM-yTr">
             <objects>
-                <viewController id="Eyn-pQ-ilN" userLabel="secondScreen" customClass="secondScreen" sceneMemberID="viewController">
+                <viewController id="Eyn-pQ-ilN" userLabel="secondScreen" customClass="secondScreen" customModule="Sleep_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="d2F-l2-mU4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,6 +296,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmd-Jl-Kgu">
+                                <rect key="frame" x="26" y="17" width="87" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="45"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doBack:" destination="Eyn-pQ-ilN" eventType="touchUpInside" id="fzj-ro-mKY"/>
+                                    <action selector="doBack:" destination="jdK-5Z-3q7" eventType="touchUpInside" id="lCT-qI-VLl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xTe-Ic-ivs"/>
                         <color key="backgroundColor" red="0.26739379029999999" green="0.26131665869999998" blue="0.65025308100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -295,13 +318,13 @@
                     </navigationItem>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="timePicker" destination="MdR-Y6-1R2" id="jTq-mg-Ggd"/>
                         <outlet property="twoFifthCycleClock" destination="jn7-Q6-WaH" id="uKR-HZ-Iia"/>
                         <outlet property="twoFirstCycleClock" destination="4oO-dN-HKO" id="UjL-Fx-WO0"/>
                         <outlet property="twoFourthCycleClock" destination="ztv-Du-UTW" id="9nZ-Js-EAL"/>
                         <outlet property="twoSecondCycleClock" destination="dgY-jU-b7N" id="VZ7-OA-9Wj"/>
                         <outlet property="twoSixthCycleClock" destination="F9j-FY-N5i" id="sRq-qB-3el"/>
                         <outlet property="twoThirdCycleClock" destination="Fm5-R6-Icl" id="9bF-Sy-iAm"/>
-                        <outlet property="twoTimePicker" destination="MdR-Y6-1R2" id="1FE-g5-58h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U85-cY-oTK" sceneMemberID="firstResponder"/>
@@ -326,9 +349,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Eyn-pQ-ilN" kind="popoverPresentation" popoverAnchorView="LOd-dG-t3h" id="dhK-PF-GbB">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="Eyn-pQ-ilN" kind="show" id="dhK-PF-GbB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6S-P9-9DK" colorLabel="IBBuiltInLabel-Gray">
@@ -340,9 +361,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jdK-5Z-3q7" kind="popoverPresentation" popoverAnchorView="x6S-P9-9DK" id="7nK-t8-gMk">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="jdK-5Z-3q7" kind="show" id="7nK-t8-gMk"/>
                                 </connections>
                             </button>
                         </subviews>

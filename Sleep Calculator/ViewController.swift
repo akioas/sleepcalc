@@ -23,7 +23,12 @@ class firstScreen: UIViewController {
     @IBOutlet weak var oneSixthCycleClock: UILabel!
     
     
-//    @IBOutlet weak var doBack: UIButton!
+    @IBAction func doBack(_ sender: UIButton) {
+//        navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+
+    }
+    //    @IBOutlet weak var doBack: UIButton!
 //    @IBOutlet weak var oneBackButton: UIButton!
 
 //    @IBAction func doBack(sender: UIButton) {
@@ -91,7 +96,13 @@ class secondScreen: UIViewController {
     @IBOutlet weak var twoSixthCycleClock: UILabel!
         
     
-    @IBOutlet weak var twoTimePicker: UIDatePicker!
+    @IBOutlet weak var timePicker: UIDatePicker!
+    
+    @IBAction func doBack(_ sender: UIButton) {
+//        navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+
+    }
     
 //    @IBOutlet weak var twoBackButton: UIButton!
 
@@ -99,5 +110,56 @@ class secondScreen: UIViewController {
 //        _ = navigationController?.popViewController(animated: true)
 //    }
     
-   
+    var timer = Timer()
+        var clocks: Dictionary<Int, UILabel> = [:]
+        var lastHour = 99
+        var lastMinute = 99
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            let backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
+            navigationItem.backBarButtonItem = backBarButtonItem
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
+            
+            clocks = [
+            0: twoFirstCycleClock,
+            1: twoSecondCycleClock,
+            2: twoThirdCycleClock,
+            3: twoFourthCycleClock,
+            4: twoFifthCycleClock,
+            5: twoSixthCycleClock,
+            ]
+            
+            self.tick()
+        }
+    
+    
+    @objc func tick() {
+            let formatter = DateFormatter()
+            let preferredLanguage = Locale.preferredLanguages[0] as String
+            
+            formatter.locale = Locale(identifier:  preferredLanguage)
+            
+            formatter.dateFormat = "HH:mm"
+            let dateString = formatter.string(from: timePicker.date)
+            
+            let time = dateString.split(separator: ":")
+           
+            
+            let newDataString = formatter.string(from: timePicker.date)
+            let hours = Int(time[0])
+            let minutes = Int(time[1])
+            if hours != lastHour || minutes != lastMinute {
+                print(hours!, minutes!)
+                lastHour = hours!
+                lastMinute = minutes!
+                
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -105, cycle: 1, ampm: newDataString, clocks: clocks)
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -195, cycle: 2, ampm: newDataString, clocks: clocks)
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -285, cycle: 3, ampm: newDataString, clocks: clocks)
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -375, cycle: 4, ampm: newDataString, clocks: clocks)
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -465, cycle: 5, ampm: newDataString, clocks: clocks)
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -555, cycle: 6, ampm: newDataString, clocks: clocks)
+            }
+        }
 }
