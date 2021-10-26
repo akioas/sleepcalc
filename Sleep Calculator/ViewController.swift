@@ -23,12 +23,12 @@ class firstScreen: UIViewController {
     @IBOutlet weak var oneSixthCycleClock: UILabel!
     
     
-    @IBOutlet weak var doBack: UIButton!
-    @IBOutlet weak var oneBackButton: UIButton!
+//    @IBOutlet weak var doBack: UIButton!
+//    @IBOutlet weak var oneBackButton: UIButton!
 
-    @IBAction func doBack(sender: UIButton) {
-        _ = navigationController?.popViewController(animated: true)
-    }
+//    @IBAction func doBack(sender: UIButton) {
+//        _ = navigationController?.popViewController(animated: true)
+//    }
         var lastHour = 99
         var lastMinute = 99
         var timer = Timer()
@@ -93,7 +93,7 @@ class secondScreen: UIViewController {
     
     @IBOutlet weak var twoTimePicker: UIDatePicker!
     
-    @IBOutlet weak var twoBackButton: UIButton!
+//    @IBOutlet weak var twoBackButton: UIButton!
 
 //    @IBAction func doBack(sender: UIButton) {
 //        _ = navigationController?.popViewController(animated: true)

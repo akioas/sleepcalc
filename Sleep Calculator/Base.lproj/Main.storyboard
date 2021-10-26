@@ -118,17 +118,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHa-6Q-Wyw">
-                                <rect key="frame" x="37" y="43" width="48" height="59"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="150"/>
-                                <state key="normal" title="&lt;">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="doBackWithSender:" destination="jdK-5Z-3q7" eventType="touchUpInside" id="xO6-1Q-g6v"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" text="00:00" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="Nc0-tK-kSW">
                                 <rect key="frame" x="141" y="613" width="230" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -144,8 +133,6 @@
                     <navigationItem key="navigationItem" id="pmH-pG-6hE"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="doBack" destination="IHa-6Q-Wyw" id="QAy-4v-tau"/>
-                        <outlet property="oneBackButton" destination="IHa-6Q-Wyw" id="VGw-dM-2rK"/>
                         <outlet property="oneFifthCycleClock" destination="Nc0-tK-kSW" id="a6K-FT-lR2"/>
                         <outlet property="oneFirstCycleClock" destination="UxC-NV-bXW" id="9En-1U-12P"/>
                         <outlet property="oneFourthCycleClock" destination="GcK-Ab-VM5" id="VLn-q8-eLB"/>
@@ -156,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nm0-d0-umM" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="549" y="-115"/>
+            <point key="canvasLocation" x="547.82608695652175" y="-115.17857142857142"/>
         </scene>
         <!--secondScreen-->
         <scene sceneID="ny5-wM-yTr">
@@ -298,17 +285,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mW-9K-cFa">
-                                <rect key="frame" x="38" y="43" width="47" height="59"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="150"/>
-                                <state key="normal" title="&lt;">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="doBackWithSender:" destination="Eyn-pQ-ilN" eventType="primaryActionTriggered" id="lr1-J1-gmB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xTe-Ic-ivs"/>
                         <color key="backgroundColor" red="0.26739379029999999" green="0.26131665869999998" blue="0.65025308100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -319,7 +295,6 @@
                     </navigationItem>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="twoBackButton" destination="3mW-9K-cFa" id="DYN-4o-Gry"/>
                         <outlet property="twoFifthCycleClock" destination="jn7-Q6-WaH" id="uKR-HZ-Iia"/>
                         <outlet property="twoFirstCycleClock" destination="4oO-dN-HKO" id="UjL-Fx-WO0"/>
                         <outlet property="twoFourthCycleClock" destination="ztv-Du-UTW" id="9nZ-Js-EAL"/>
@@ -332,35 +307,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U85-cY-oTK" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="525" y="570"/>
-        </scene>
-        <!-- - -->
-        <scene sceneID="pD1-o7-xpa">
-            <objects>
-                <navigationController title=" -" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="6fH-Kk-cBw" customClass="MainNavigationController" customModule="Sleep_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" id="Tba-Nq-gwf">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="0.84012660520000004" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="backgroudColor">
-                            <color key="value" systemColor="systemPinkColor"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <segue destination="f6x-AC-wll" kind="relationship" relationship="rootViewController" id="1mT-eN-Xlh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rTp-2X-dbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1125" y="157"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QUe-bD-UqC">
@@ -380,7 +326,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Eyn-pQ-ilN" kind="show" id="dhK-PF-GbB"/>
+                                    <segue destination="Eyn-pQ-ilN" kind="popoverPresentation" popoverAnchorView="LOd-dG-t3h" id="dhK-PF-GbB">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6S-P9-9DK" colorLabel="IBBuiltInLabel-Gray">
@@ -392,7 +340,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jdK-5Z-3q7" kind="show" id="7nK-t8-gMk"/>
+                                    <segue destination="jdK-5Z-3q7" kind="popoverPresentation" popoverAnchorView="x6S-P9-9DK" id="7nK-t8-gMk">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -404,16 +354,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8L-KP-FV8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-333" y="157"/>
+            <point key="canvasLocation" x="-333" y="254"/>
         </scene>
     </scenes>
     <resources>
         <image name="alarm" catalog="system" width="124" height="128"/>
         <image name="moon.zzz.fill" catalog="system" width="121" height="128"/>
         <image name="sun.max.fill" catalog="system" width="128" height="124"/>
-        <systemColor name="scrollViewTexturedBackgroundColor">
-            <color red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -422,9 +369,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
