@@ -34,8 +34,7 @@ class firstScreen: UIViewController {
 //    @IBAction func doBack(sender: UIButton) {
 //        _ = navigationController?.popViewController(animated: true)
 //    }
-        var lastHour = 99
-        var lastMinute = 99
+        
         var timer = Timer()
         var clocks: Dictionary<Int, UILabel> = [:]
         override func viewDidLoad() {
@@ -55,21 +54,22 @@ class firstScreen: UIViewController {
         }
     
     @objc func tick() {
-            let formatter = DateFormatter()
-            let preferredLanguage = Locale.preferredLanguages[0] as String
-            formatter.locale = Locale(identifier:  preferredLanguage)
-            formatter.dateFormat = "HH:mm"
-     
-            let dateString = formatter.string(from: Date())
-            
-            let time = dateString.split(separator: ":")
-            
-            
-            let newDataString = formatter.string(from: Date())
-            let hours = Int(time[0])
-            let minutes = Int(time[1])
+            var lastHour = 99
+            var lastMinute = 99
+            let date = Date()
+      //  let dateString = DateFormatter().string(from: Date())
+        let timeReturn = timeModel().getHoursMinutes(dateSource: date)
+        
+        
+        
+        let hours = timeReturn.hours
+        let minutes = timeReturn.minutes
+        
+        let newDataString = timeReturn.newDataString
+        
+        
             if hours != lastHour || minutes != lastMinute {
-                       print(hours!, minutes!)
+//                       print(hours!, minutes!)
                        lastHour = hours!
                        lastMinute = minutes!
                 firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 105, cycle: 1, ampm: newDataString, clocks: clocks)
@@ -112,8 +112,7 @@ class secondScreen: UIViewController {
     
     var timer = Timer()
         var clocks: Dictionary<Int, UILabel> = [:]
-        var lastHour = 99
-        var lastMinute = 99
+        
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -135,31 +134,20 @@ class secondScreen: UIViewController {
     
     
     @objc func tick() {
-            let formatter = DateFormatter()
-            let preferredLanguage = Locale.preferredLanguages[0] as String
-            
-            formatter.locale = Locale(identifier:  preferredLanguage)
-            
-            formatter.dateFormat = "HH:mm"
-            let dateString = formatter.string(from: timePicker.date)
-            
-            let time = dateString.split(separator: ":")
-           
-            
-            let newDataString = formatter.string(from: timePicker.date)
-            let hours = Int(time[0])
-            let minutes = Int(time[1])
-            if hours != lastHour || minutes != lastMinute {
-                print(hours!, minutes!)
-                lastHour = hours!
-                lastMinute = minutes!
-                
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -105, cycle: 1, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -195, cycle: 2, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -285, cycle: 3, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -375, cycle: 4, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -465, cycle: 5, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -555, cycle: 6, ampm: newDataString, clocks: clocks)
-            }
+            var lastHour = 99
+            var lastMinute = 99
+//
+//            if hours != lastHour || minutes != lastMinute {
+//                print(hours!, minutes!)
+//                lastHour = hours!
+//                lastMinute = minutes!
+//
+//                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -105, cycle: 1, ampm: newDataString, clocks: clocks)
+//                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -195, cycle: 2, ampm: newDataString, clocks: clocks)
+//                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -285, cycle: 3, ampm: newDataString, clocks: clocks)
+//                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -375, cycle: 4, ampm: newDataString, clocks: clocks)
+//                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -465, cycle: 5, ampm: newDataString, clocks: clocks)
+//                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -555, cycle: 6, ampm: newDataString, clocks: clocks)
+          //  }
         }
 }

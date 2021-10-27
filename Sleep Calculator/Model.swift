@@ -149,4 +149,22 @@ class secondModel {
 }
 
 
-
+class timeModel {
+    func getHoursMinutes (dateSource: Date) -> (hours: Int?, minutes: Int?, newDataString: String) {
+        let formatter = DateFormatter()
+        let preferredLanguage = Locale.preferredLanguages[0] as String
+        
+        formatter.locale = Locale(identifier:  preferredLanguage)
+        
+        formatter.dateFormat = "HH:mm"
+        let dateString = formatter.string(from: dateSource)
+        
+        let time = dateString.split(separator: ":")
+       
+        
+        let newDataString = formatter.string(from: dateSource)
+        let hours = Int(time[0])
+        let minutes = Int(time[1])
+        return (hours, minutes, newDataString)
+    }
+}
