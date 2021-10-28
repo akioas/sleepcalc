@@ -5,26 +5,25 @@ import UIKit
 
 class firstModel {
     
-    func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, ampm: String) -> (String) {
-        var newMinutes = timetoadd+minutes
+    func hoursTimeCalc(hours: Int, minutes: Int, timeToAdd: Int, amOrPm: String) -> (String) {
+        var newMinutes = timeToAdd+minutes
         var newHours = hours+(newMinutes/60)
+
         if newMinutes>59 {
             newMinutes = newMinutes%60
         }
-        let formatter = DateFormatter()
-        let preferredLanguage = Locale.preferredLanguages[0] as String
-        formatter.locale = Locale(identifier:  preferredLanguage)
-        let dateFormat = DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
-        var am = 0
+
+        let dateFormat = dateFormatFunc()
+        var am = false
         var text: String
         if dateFormat.range(of: "a") != nil {
-            am = 1 //12-часовой
+            am = true //12-часовой
         }
-        var o = 0
-        if am == 1 {
+        var MoreThanTwelveH = 0
+        if am == true {
             var newAmpm = ""
-             let amtext = NSLocalizedString("AM", comment: "AM")
-             let pmtext = NSLocalizedString("PM", comment: "PM")
+             let amText = NSLocalizedString("AM", comment: "AM")
+             let pmText = NSLocalizedString("PM", comment: "PM")
             
             if newHours>=12 {
                 newHours = newHours - 12
@@ -33,29 +32,29 @@ class firstModel {
                 }
                 if newHours>=12 {
                     newHours = newHours - 12
-                    o = 1
+                    MoreThanTwelveH = 1
                     
                 }
-                if o == 0 {
+                if MoreThanTwelveH == 0 {
                     
-                    if ampm == "PM" {
-                        newAmpm = amtext
+                    if amOrPm == "PM" {
+                        newAmpm = amText
                     }
                     else {
-                        newAmpm = pmtext
+                        newAmpm = pmText
                     }
                 }
                 else
-                    if ampm == "PM" {
-                        newAmpm = pmtext
+                    if amOrPm == "PM" {
+                        newAmpm = pmText
                     }
                     else {
-                        newAmpm = amtext
+                        newAmpm = amText
                 }
                 
             }
             else {
-                newAmpm = amtext
+                newAmpm = amText
             }
             
             
@@ -102,17 +101,14 @@ class secondModel {
                     newHours = newHours + 1
                     newMinutes = 0
                 }
-                let formatter = DateFormatter()
-                let preferredLanguage = Locale.preferredLanguages[0] as String
-                formatter.locale = Locale(identifier:  preferredLanguage)
-                let dateFormat = DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
-                var am = 0
+        let dateFormat = dateFormatFunc()
+                var am = false
                 var text: String
 
                 if dateFormat.range(of: "a") != nil {
-                    am = 1 //12-часовой
+                    am = true //12-часовой
                 }
-                if am == 1{
+                if am == true{
                     var newAmpm = ""
                     let amtext = NSLocalizedString("AM", comment: "AM")
                     let pmtext = NSLocalizedString("PM", comment: "PM")
@@ -173,4 +169,13 @@ class timeModel {
         let minutes = Int(time[1])
         return (hours, minutes, newDataString)
     }
+}
+
+
+func dateFormatFunc() -> (String) {
+    let formatter = DateFormatter()
+    let preferredLanguage = Locale.preferredLanguages[0] as String
+    formatter.locale = Locale(identifier:  preferredLanguage)
+    let dateFormat = DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
+    return dateFormat
 }
