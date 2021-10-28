@@ -23,6 +23,7 @@
 		4ABB89A827272EE70096E5DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EE8272316D90027B8BE /* README.md */; };
 		4ABB89A927272EE70096E5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EFD27231A910027B8BE /* Assets.xcassets */; };
 		4ABB89AA27272EE70096E5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC4272315B30027B8BE /* Main.storyboard */; };
+		4ABB89B1272ADA910096E5DC /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4ABB89B0272ADA910096E5DC /* ru.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,9 @@
 		4A3D5EFD27231A910027B8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ABB89AE27272EE70096E5DC /* Sleep Calculator copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB89AF27272EE70096E5DC /* Sleep Calculator copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sleep Calculator copy-Info.plist"; path = "/Users/katya/Desktop/Sleep Calculator/Sleep Calculator copy-Info.plist"; sourceTree = "<absolute>"; };
+		4ABB89B0272ADA910096E5DC /* ru.lproj */ = {isa = PBXFileReference; lastKnownFileType = file; name = ru.lproj; path = "Sleep Calculator/ru.lproj"; sourceTree = SOURCE_ROOT; };
+		4ABB89B3272ADB690096E5DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4ABB89B5272ADB9D0096E5DC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 				4A3D5ED6272316090027B8BE /* Model.swift */,
 				4A3D5EC2272315B30027B8BE /* ViewController.swift */,
 				4A3D5EFB272318DE0027B8BE /* Launch Screen.storyboard */,
+				4ABB89B0272ADA910096E5DC /* ru.lproj */,
 				4A3D5EE7272316D90027B8BE /* MainNavigationController.swift */,
 				4A3D5EEE272318B70027B8BE /* en.lproj */,
 				4A3D5EE8272316D90027B8BE /* README.md */,
@@ -182,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ABB89B1272ADA910096E5DC /* ru.lproj in Resources */,
 				4A3D5EED272316D90027B8BE /* README.md in Resources */,
 				4A3D5EFE27231A910027B8BE /* Assets.xcassets in Resources */,
 				4A3D5EC6272315B30027B8BE /* Main.storyboard in Resources */,
@@ -232,6 +238,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4A3D5EC5272315B30027B8BE /* Base */,
+				4ABB89B3272ADB690096E5DC /* en */,
+				4ABB89B5272ADB9D0096E5DC /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

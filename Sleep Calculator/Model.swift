@@ -35,11 +35,11 @@ class firstModel {
                 }
                 if MoreThanTwelveH == 0 {
 
-                    newAmpm = changeAmText(from: amOrPm)
+                    newAmpm = textProperty().changeAmText(from: amOrPm)
                 }
                 else {
 
-                    newAmpm = keepAmText(from: amOrPm)
+                    newAmpm = textProperty().keepAmText(from: amOrPm)
                 }
                 
             }
@@ -47,7 +47,7 @@ class firstModel {
                 newAmpm = textProperty().amText
             }
 
-            text = newMinutesText(Hours: newHours, Minutes: newMinutes, Ampm: newAmpm)
+            text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: newAmpm)
 
         }
         else {
@@ -56,14 +56,12 @@ class firstModel {
                 newHours = newHours - 24
             }
 
-            text = newMinutesText(Hours: newHours, Minutes: newMinutes, Ampm: "")
+            text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: "")
              }
         return text
     }
     
 }
-
-
 
 class secondModel {
     
@@ -94,13 +92,13 @@ class secondModel {
                             newHours = 12
                         }
 
-                        newAmpm = changeAmText(from: amOrPm)
+                        newAmpm = textProperty().changeAmText(from: amOrPm)
                     }
                     else {
                         newAmpm = textProperty().amText
                     }
 
-                    text = newMinutesText(Hours: newHours, Minutes: newMinutes, Ampm: newAmpm)
+                    text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: newAmpm)
                 }
                 else
                 {
@@ -108,7 +106,7 @@ class secondModel {
                         newHours = newHours + 24
                     }
 
-                    text = newMinutesText(Hours: newHours, Minutes: newMinutes, Ampm: "")
+                    text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: "")
                 }
         return text
     }
@@ -149,43 +147,42 @@ class timeModel {
 
 
 
-func newMinutesText(Hours: Int, Minutes: Int, Ampm: String) -> (String){
-    var text: String
-    if Minutes < 10 {
-                   text = "\(Hours):0\(Minutes) \(Ampm)"
-               }
-               else {
-                   text = "\(Hours):\(Minutes) \(Ampm)"
-               }
-    return text
-}
-
-
-func changeAmText(from: String) -> (String){
-    var newAmpm = ""
-    if from == "PM" {
-        newAmpm = textProperty().amText
-    }
-    else {
-        newAmpm = textProperty().pmText
-    }
-    return newAmpm
-}
-
-func keepAmText(from: String) -> String {
-    var newAmpm = ""
-    if from == "PM" {
-        newAmpm = textProperty().pmText
-    }
-    else {
-        newAmpm = textProperty().amText
-    }
-    return newAmpm
-}
-
-
-
 class textProperty {
     let amText = NSLocalizedString("AM", comment: "AM")
     let pmText = NSLocalizedString("PM", comment: "PM")
+    
+    func newMinutesText(hours: Int, minutes: Int, amPm: String) -> (String){
+        var text: String
+        if minutes < 10 {
+                       text = "\(hours):0\(minutes) \(amPm)"
+                   }
+                   else {
+                       text = "\(hours):\(minutes) \(amPm)"
+                   }
+        return text
+    }
+
+
+    func changeAmText(from: String) -> (String){
+        var newAmpm = ""
+        if from == "PM" {
+            newAmpm = textProperty().amText
+        }
+        else {
+            newAmpm = textProperty().pmText
+        }
+        return newAmpm
+    }
+
+    func keepAmText(from: String) -> String {
+        var newAmpm = ""
+        if from == "PM" {
+            newAmpm = textProperty().pmText
+        }
+        else {
+            newAmpm = textProperty().amText
+        }
+        return newAmpm
+    }
+    
 }
