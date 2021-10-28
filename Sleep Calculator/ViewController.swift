@@ -113,7 +113,7 @@ class secondScreen: UIViewController {
                 lastHour = hours!
                 lastMinute = minutes!
                 for clocksCycle in 0...5 {
-                clocks[clocksCycle]!.text = secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: (-105 - 90 * clocksCycle), ampm: newDataString)
+                clocks[clocksCycle]!.text = secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: (-105 - 90 * clocksCycle), amOrPm: newDataString)
                 }
             }
         }
