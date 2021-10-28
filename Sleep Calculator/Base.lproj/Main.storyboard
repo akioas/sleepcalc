@@ -168,8 +168,8 @@
                             <datePicker clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-Y6-1R2">
                                 <rect key="frame" x="141" y="47" width="235" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <date key="date" timeIntervalSinceReferenceDate="616222800.40928197">
                                     <!--2020-07-12 05:00:00 +0000-->
                                 </date>
@@ -306,7 +306,6 @@
                                 </state>
                                 <connections>
                                     <action selector="doBack:" destination="Eyn-pQ-ilN" eventType="touchUpInside" id="fzj-ro-mKY"/>
-                                    <action selector="doBack:" destination="jdK-5Z-3q7" eventType="touchUpInside" id="lCT-qI-VLl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,6 +381,9 @@
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="moon.zzz.fill" catalog="system" width="121" height="128"/>
         <image name="sun.max.fill" catalog="system" width="128" height="124"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -390,9 +392,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
