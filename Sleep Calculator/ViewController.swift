@@ -18,7 +18,6 @@ class firstScreen: UIViewController {
 
     }
    
-        
         var timer = Timer()
         var clocks: Dictionary<Int, UILabel> = [:]
         override func viewDidLoad() {
@@ -48,20 +47,17 @@ class firstScreen: UIViewController {
         let newDataString = timeReturn.newDataString
         
         
-            if hours != lastHour || minutes != lastMinute {
-                       lastHour = hours!
-                       lastMinute = minutes!
-                firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 105, cycle: 1, ampm: newDataString, clocks: clocks)
-                firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 195, cycle: 2, ampm: newDataString, clocks: clocks)
-                firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 285, cycle: 3, ampm: newDataString, clocks: clocks)
-                firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 375, cycle: 4, ampm: newDataString, clocks: clocks)
-                firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 465, cycle: 5, ampm: newDataString, clocks: clocks)
-                firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 555, cycle: 6, ampm: newDataString, clocks: clocks)
+        if hours != lastHour || minutes != lastMinute {
+            lastHour = hours!
+            lastMinute = minutes!
+            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 105, cycle: 1, ampm: newDataString, clocks: clocks[0])
+            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 195, cycle: 2, ampm: newDataString, clocks: clocks[1])
+            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 285, cycle: 3, ampm: newDataString, clocks: clocks[2])
+            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 375, cycle: 4, ampm: newDataString, clocks: clocks[3])
+            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 465, cycle: 5, ampm: newDataString, clocks: clocks[4])
+            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 555, cycle: 6, ampm: newDataString, clocks: clocks[5])
             }
         }
-    
-
-
 }
 
 // 2 экран
@@ -86,8 +82,6 @@ class secondScreen: UIViewController {
     
     var timer = Timer()
         var clocks: Dictionary<Int, UILabel> = [:]
-        
-        
         override func viewDidLoad() {
             super.viewDidLoad()
             let backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
@@ -122,12 +116,12 @@ class secondScreen: UIViewController {
                 lastHour = hours!
                 lastMinute = minutes!
 
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -105, cycle: 1, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -195, cycle: 2, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -285, cycle: 3, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -375, cycle: 4, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -465, cycle: 5, ampm: newDataString, clocks: clocks)
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -555, cycle: 6, ampm: newDataString, clocks: clocks)
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -105, cycle: 1, ampm: newDataString, clocks: clocks[0])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -195, cycle: 2, ampm: newDataString, clocks: clocks[1])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -285, cycle: 3, ampm: newDataString, clocks: clocks[2])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -375, cycle: 4, ampm: newDataString, clocks: clocks[3])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -465, cycle: 5, ampm: newDataString, clocks: clocks[4])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -555, cycle: 6, ampm: newDataString, clocks: clocks[5])
             }
         }
 }

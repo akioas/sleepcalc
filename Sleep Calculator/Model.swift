@@ -5,7 +5,7 @@ import UIKit
 
 class firstModel {
     
-    func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, cycle: Int, ampm: String, clocks: Dictionary<Int, UILabel>) {
+    func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, cycle: Int, ampm: String, clocks: UILabel?) {
         var newMinutes = timetoadd+minutes
         var newHours = hours+(newMinutes/60)
         if newMinutes>59 {
@@ -58,10 +58,10 @@ class firstModel {
             }
             
             if newMinutes < 10 {
-                           clocks[cycle-1]!.text = "\(newHours):0\(newMinutes) \(newAmpm)"
+                           clocks!.text = "\(newHours):0\(newMinutes) \(newAmpm)"
                        }
                        else {
-                           clocks[cycle-1]!.text = "\(newHours):\(newMinutes) \(newAmpm)"
+                           clocks!.text = "\(newHours):\(newMinutes) \(newAmpm)"
                        }
 
         }
@@ -73,10 +73,10 @@ class firstModel {
 
 
                  if newMinutes < 10 {
-                     clocks[cycle-1]!.text = "\(newHours):0\(newMinutes)"
+                     clocks!.text = "\(newHours):0\(newMinutes)"
                  }
                  else {
-                     clocks[cycle-1]!.text = "\(newHours):\(newMinutes)"
+                     clocks!.text = "\(newHours):\(newMinutes)"
                  }
              }
     }
@@ -87,7 +87,7 @@ class firstModel {
 
 class secondModel {
     
-    func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, cycle: Int, ampm: String, clocks: Dictionary<Int, UILabel>) {
+    func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, cycle: Int, ampm: String, clocks: UILabel?) {
 
         var newMinutes = timetoadd+minutes
                 var newHours = hours+(newMinutes/60)
@@ -127,10 +127,10 @@ class secondModel {
                         newAmpm = amtext
                     }
                     if newMinutes < 10 {
-                        clocks[cycle-1]!.text = "\(newHours):0\(newMinutes) \(newAmpm)"
+                        clocks!.text = "\(newHours):0\(newMinutes) \(newAmpm)"
                     }
                     else {
-                        clocks[cycle-1]!.text = "\(newHours):\(newMinutes) \(newAmpm)"
+                        clocks!.text = "\(newHours):\(newMinutes) \(newAmpm)"
                     }
                 }
                 else
@@ -139,10 +139,10 @@ class secondModel {
                         newHours = newHours + 24
                     }
                     if newMinutes < 10 {
-                        clocks[cycle-1]!.text = "\(newHours):0\(newMinutes)"
+                        clocks!.text = "\(newHours):0\(newMinutes)"
                     }
                     else {
-                        clocks[cycle-1]!.text = "\(newHours):\(newMinutes)"
+                        clocks!.text = "\(newHours):\(newMinutes)"
                     }
                 }
     }
