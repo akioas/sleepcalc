@@ -50,14 +50,11 @@ class firstScreen: UIViewController {
         if hours != lastHour || minutes != lastMinute {
             lastHour = hours!
             lastMinute = minutes!
-            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 105, cycle: 1, ampm: newDataString, clocks: clocks[0])
-            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 195, cycle: 2, ampm: newDataString, clocks: clocks[1])
-            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 285, cycle: 3, ampm: newDataString, clocks: clocks[2])
-            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 375, cycle: 4, ampm: newDataString, clocks: clocks[3])
-            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 465, cycle: 5, ampm: newDataString, clocks: clocks[4])
-            firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: 555, cycle: 6, ampm: newDataString, clocks: clocks[5])
+            for clocksCycle in 1...6 {
+            clocks[clocksCycle - 1]!.text = firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: (105 + 90 * (clocksCycle - 1)), ampm: newDataString)
             }
         }
+    }
 }
 
 // 2 экран
@@ -116,12 +113,12 @@ class secondScreen: UIViewController {
                 lastHour = hours!
                 lastMinute = minutes!
 
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -105, cycle: 1, ampm: newDataString, clocks: clocks[0])
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -195, cycle: 2, ampm: newDataString, clocks: clocks[1])
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -285, cycle: 3, ampm: newDataString, clocks: clocks[2])
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -375, cycle: 4, ampm: newDataString, clocks: clocks[3])
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -465, cycle: 5, ampm: newDataString, clocks: clocks[4])
-                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -555, cycle: 6, ampm: newDataString, clocks: clocks[5])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -105, ampm: newDataString, clocks: clocks[0])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -195, ampm: newDataString, clocks: clocks[1])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -285, ampm: newDataString, clocks: clocks[2])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -375, ampm: newDataString, clocks: clocks[3])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -465, ampm: newDataString, clocks: clocks[4])
+                secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: -555, ampm: newDataString, clocks: clocks[5])
             }
         }
 }
