@@ -90,7 +90,7 @@ class firstModel {
 
 class secondModel {
     
-    func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, ampm: String, clocks: UILabel?) {
+    func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, ampm: String) -> (String){
 
         var newMinutes = timetoadd+minutes
                 var newHours = hours+(newMinutes/60)
@@ -107,6 +107,8 @@ class secondModel {
                 formatter.locale = Locale(identifier:  preferredLanguage)
                 let dateFormat = DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
                 var am = 0
+                var text: String
+
                 if dateFormat.range(of: "a") != nil {
                     am = 1 //12-часовой
                 }
@@ -130,10 +132,10 @@ class secondModel {
                         newAmpm = amtext
                     }
                     if newMinutes < 10 {
-                        clocks!.text = "\(newHours):0\(newMinutes) \(newAmpm)"
+                        text = "\(newHours):0\(newMinutes) \(newAmpm)"
                     }
                     else {
-                        clocks!.text = "\(newHours):\(newMinutes) \(newAmpm)"
+                        text = "\(newHours):\(newMinutes) \(newAmpm)"
                     }
                 }
                 else
@@ -142,12 +144,13 @@ class secondModel {
                         newHours = newHours + 24
                     }
                     if newMinutes < 10 {
-                        clocks!.text = "\(newHours):0\(newMinutes)"
+                        text = "\(newHours):0\(newMinutes)"
                     }
                     else {
-                        clocks!.text = "\(newHours):\(newMinutes)"
+                        text = "\(newHours):\(newMinutes)"
                     }
                 }
+        return text
     }
 }
 
