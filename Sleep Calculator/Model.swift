@@ -3,7 +3,7 @@ import UIKit
 
 
 
-class firstModel {
+class FirstModel {
     
     func hoursTimeCalc(hours: Int, minutes: Int, timeToAdd: Int, amOrPm: String) -> (String) {
         var newMinutes = timeToAdd + minutes
@@ -13,7 +13,7 @@ class firstModel {
             newMinutes = newMinutes % 60
         }
 
-        let dateFormat = timeModel().dateFormatFunc()
+        let dateFormat = TimeModel().dateFormatFunc()
         var am = false
         var text = ""
         if dateFormat.range(of: "a") != nil {
@@ -35,19 +35,19 @@ class firstModel {
                 }
                 if MoreThanTwelveH == 0 {
 
-                    newAmpm = textProperty().changeAmText(from: amOrPm)
+                    newAmpm = TextProperty().changeAmText(from: amOrPm)
                 }
                 else {
 
-                    newAmpm = textProperty().keepAmText(from: amOrPm)
+                    newAmpm = TextProperty().keepAmText(from: amOrPm)
                 }
                 
             }
             else {
-                newAmpm = textProperty().amText
+                newAmpm = TextProperty().amText
             }
 
-            text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: newAmpm)
+            text = TextProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: newAmpm)
 
         }
         else {
@@ -56,7 +56,7 @@ class firstModel {
                 newHours = newHours - 24
             }
 
-            text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: "")
+            text = TextProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: "")
              }
         return text
     }
@@ -64,7 +64,7 @@ class firstModel {
 }
 
 
-class secondModel {
+class SecondModel {
     
     func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, amOrPm: String) -> (String){
 
@@ -78,7 +78,7 @@ class secondModel {
                     newHours = newHours + 1
                     newMinutes = 0
                 }
-        let dateFormat = timeModel().dateFormatFunc()
+        let dateFormat = TimeModel().dateFormatFunc()
                 var am = false
                 var text = ""
 
@@ -93,13 +93,13 @@ class secondModel {
                             newHours = 12
                         }
 
-                        newAmpm = textProperty().changeAmText(from: amOrPm)
+                        newAmpm = TextProperty().changeAmText(from: amOrPm)
                     }
                     else {
-                        newAmpm = textProperty().amText
+                        newAmpm = TextProperty().amText
                     }
 
-                    text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: newAmpm)
+                    text = TextProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: newAmpm)
                 }
                 else
                 {
@@ -107,14 +107,14 @@ class secondModel {
                         newHours = newHours + 24
                     }
 
-                    text = textProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: "")
+                    text = TextProperty().newMinutesText(hours: newHours, minutes: newMinutes, amPm: "")
                 }
         return text
     }
 }
 
 
-class timeModel {
+class TimeModel {
     func getHoursMinutes (dateSource: Date) -> (hours: Int?, minutes: Int?, newDataString: String) {
         let formatter = DateFormatter()
         let preferredLanguage = Locale.preferredLanguages[0] as String
@@ -148,7 +148,7 @@ class timeModel {
 
 
 
-class textProperty {
+class TextProperty {
     let amText = NSLocalizedString("AM", comment: "AM")
     let pmText = NSLocalizedString("PM", comment: "PM")
     
@@ -167,10 +167,10 @@ class textProperty {
     func changeAmText(from: String) -> (String){
         var newAmpm = ""
         if from == "PM" {
-            newAmpm = textProperty().amText
+            newAmpm = TextProperty().amText
         }
         else {
-            newAmpm = textProperty().pmText
+            newAmpm = TextProperty().pmText
         }
         return newAmpm
     }
@@ -178,10 +178,10 @@ class textProperty {
     func keepAmText(from: String) -> String {
         var newAmpm = ""
         if from == "PM" {
-            newAmpm = textProperty().pmText
+            newAmpm = TextProperty().pmText
         }
         else {
-            newAmpm = textProperty().amText
+            newAmpm = TextProperty().amText
         }
         return newAmpm
     }

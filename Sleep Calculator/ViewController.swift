@@ -2,7 +2,7 @@ import UIKit
 
 // 1 экран
 
-class firstScreen: UIViewController {
+class FirstScreen: UIViewController {
     @IBOutlet weak var oneFirstCycleClock: UILabel!
     @IBOutlet weak var oneSecondCycleClock: UILabel!
     @IBOutlet weak var oneThirdCycleClock: UILabel!
@@ -39,7 +39,7 @@ class firstScreen: UIViewController {
         var lastHour = 99
         var lastMinute = 99
         let date = Date()
-        let timeReturn = timeModel().getHoursMinutes(dateSource: date)
+        let timeReturn = TimeModel().getHoursMinutes(dateSource: date)
         
         let hours = timeReturn.hours
         let minutes = timeReturn.minutes
@@ -50,7 +50,7 @@ class firstScreen: UIViewController {
             lastHour = hours!
             lastMinute = minutes!
             for clocksCycle in 0...5 {
-            clocks[clocksCycle]!.text = firstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timeToAdd: (105 + 90 * clocksCycle), amOrPm: newDataString)
+            clocks[clocksCycle]!.text = FirstModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timeToAdd: (105 + 90 * clocksCycle), amOrPm: newDataString)
             }
         }
     }
@@ -58,7 +58,7 @@ class firstScreen: UIViewController {
 
 // 2 экран
 
-class secondScreen: UIViewController {
+class SecondScreen: UIViewController {
     @IBOutlet weak var twoFirstCycleClock: UILabel!
     @IBOutlet weak var twoSecondCycleClock: UILabel!
     @IBOutlet weak var twoThirdCycleClock: UILabel!
@@ -101,7 +101,7 @@ class secondScreen: UIViewController {
         var lastHour = 99
         var lastMinute = 99
         
-        let timeReturn = timeModel().getHoursMinutes(dateSource: timePicker.date)
+        let timeReturn = TimeModel().getHoursMinutes(dateSource: timePicker.date)
         
         let hours = timeReturn.hours
         let minutes = timeReturn.minutes
@@ -112,7 +112,7 @@ class secondScreen: UIViewController {
                 lastHour = hours!
                 lastMinute = minutes!
                 for clocksCycle in 0...5 {
-                clocks[clocksCycle]!.text = secondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: (-105 - 90 * clocksCycle), amOrPm: newDataString)
+                clocks[clocksCycle]!.text = SecondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: (-105 - 90 * clocksCycle), amOrPm: newDataString)
                 }
             }
         }
