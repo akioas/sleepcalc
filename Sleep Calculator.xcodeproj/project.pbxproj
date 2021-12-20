@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0EA3F12770E4A600EB6454 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4A0EA3F02770E4A600EB6454 /* ru.lproj */; };
 		4A3D5EBF272315B30027B8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EBE272315B30027B8BE /* AppDelegate.swift */; };
 		4A3D5EC1272315B30027B8BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC0272315B30027B8BE /* SceneDelegate.swift */; };
 		4A3D5EC3272315B30027B8BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3D5EC2272315B30027B8BE /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0EA3EE2770E47600EB6454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4A0EA3EF2770E47900EB6454 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		4A0EA3F02770E4A600EB6454 /* ru.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
 		4A3D5EBB272315B30027B8BE /* Sleep Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3D5EBE272315B30027B8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A3D5EC0272315B30027B8BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 				4A3D5EE7272316D90027B8BE /* MainNavigationController.swift */,
 				4A3D5EEE272318B70027B8BE /* en.lproj */,
 				4A3D5EE8272316D90027B8BE /* README.md */,
+				4A0EA3F02770E4A600EB6454 /* ru.lproj */,
 				4A3D5EC4272315B30027B8BE /* Main.storyboard */,
 				4A3D5EFD27231A910027B8BE /* Assets.xcassets */,
 				4A3D5ECC272315B50027B8BE /* Info.plist */,
@@ -145,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0EA3F12770E4A600EB6454 /* ru.lproj in Resources */,
 				4A3D5EED272316D90027B8BE /* README.md in Resources */,
 				4A3D5EFE27231A910027B8BE /* Assets.xcassets in Resources */,
 				4A3D5EC6272315B30027B8BE /* Main.storyboard in Resources */,
@@ -173,6 +179,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4A3D5EC5272315B30027B8BE /* Base */,
+				4A0EA3EE2770E47600EB6454 /* en */,
+				4A0EA3EF2770E47900EB6454 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
