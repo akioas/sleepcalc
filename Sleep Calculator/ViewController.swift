@@ -1,6 +1,5 @@
 import UIKit
 
-
 // 1 экран
 
 class firstScreen: UIViewController {

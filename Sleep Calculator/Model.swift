@@ -63,6 +63,7 @@ class firstModel {
     
 }
 
+
 class secondModel {
     
     func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, amOrPm: String) -> (String){
