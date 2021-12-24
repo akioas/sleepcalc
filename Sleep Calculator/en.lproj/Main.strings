@@ -21,7 +21,7 @@
 "GcK-Ab-VM5.text" = "00:00";
 
 /* Class = "UIButton"; normalTitle = "when to go to bed"; ObjectID = "LOd-dG-t3h"; */
-"LOd-dG-t3h.normalTitle" = "when to go to bed";
+"LOd-dG-t3h.normalTitle" = "Time to go to bed";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "Nc0-tK-kSW"; */
 "Nc0-tK-kSW.text" = "00:00";
@@ -78,7 +78,7 @@
 "tGY-Rj-t0p.text" = "6 h";
 
 /* Class = "UIButton"; normalTitle = "when to wake up"; ObjectID = "x6S-P9-9DK"; */
-"x6S-P9-9DK.normalTitle" = "when to wake up";
+"x6S-P9-9DK.normalTitle" = "Time to wake up";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "ztv-Du-UTW"; */
 "ztv-Du-UTW.text" = "00:00";

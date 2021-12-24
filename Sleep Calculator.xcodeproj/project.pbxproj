@@ -20,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		4A0EA3EE2770E47600EB6454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		4A0EA3EF2770E47900EB6454 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		4A0EA3F02770E4A600EB6454 /* ru.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
 		4A3D5EBB272315B30027B8BE /* Sleep Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3D5EBE272315B30027B8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		4A3D5EF2272318B70027B8BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		4A3D5EFB272318DE0027B8BE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		4A3D5EFD27231A910027B8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A6D1AB92775EAE200030984 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +180,7 @@
 			children = (
 				4A3D5EC5272315B30027B8BE /* Base */,
 				4A0EA3EE2770E47600EB6454 /* en */,
-				4A0EA3EF2770E47900EB6454 /* ru */,
+				4A6D1AB92775EAE200030984 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

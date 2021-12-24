@@ -1,4 +1,7 @@
 
+/* Class = "UILabel"; text = "Time to go to bed"; ObjectID = "2QI-9U-0uh"; */
+"2QI-9U-0uh.text" = "Когда идти спать";
+
 /* Class = "UILabel"; text = "00:00"; ObjectID = "4oO-dN-HKO"; */
 "4oO-dN-HKO.text" = "00:00";
 
@@ -21,7 +24,7 @@
 "GcK-Ab-VM5.text" = "00:00";
 
 /* Class = "UIButton"; normalTitle = "when to go to bed"; ObjectID = "LOd-dG-t3h"; */
-"LOd-dG-t3h.normalTitle" = "когда идти спать";
+"LOd-dG-t3h.normalTitle" = "Время идти спать";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "Nc0-tK-kSW"; */
 "Nc0-tK-kSW.text" = "00:00";
@@ -56,6 +59,9 @@
 /* Class = "UILabel"; text = "7.5 h"; ObjectID = "grh-0F-rhp"; */
 "grh-0F-rhp.text" = "7.5 ч";
 
+/* Class = "UILabel"; text = "Time to wake up"; ObjectID = "hJP-aW-7f8"; */
+"hJP-aW-7f8.text" = "Когда просыпаться, если идти спать сейчас";
+
 /* Class = "UILabel"; text = "7.5 h"; ObjectID = "i3X-i7-GtZ"; */
 "i3X-i7-GtZ.text" = "7.5 ч";
 
@@ -78,7 +84,7 @@
 "tGY-Rj-t0p.text" = "6 ч";
 
 /* Class = "UIButton"; normalTitle = "when to wake up"; ObjectID = "x6S-P9-9DK"; */
-"x6S-P9-9DK.normalTitle" = "когда просыпаться";
+"x6S-P9-9DK.normalTitle" = "Время пробуждения";
 
 /* Class = "UILabel"; text = "00:00"; ObjectID = "ztv-Du-UTW"; */
 "ztv-Du-UTW.text" = "00:00";
