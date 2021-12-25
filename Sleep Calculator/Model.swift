@@ -130,7 +130,7 @@ class TimeModel {
     var newDataString = ""
     var hours:Int? = 0
     var minutes:Int? = 0
-    var dateFormat = ""
+
     
     func getHoursMinutes (dateSource: Date) -> (hours: Int?, minutes: Int?, newDataString: String) {
         formatter.locale = Locale(identifier:  preferredLanguage)
@@ -152,8 +152,8 @@ class TimeModel {
     func dateFormatFunc() -> (String) {
         
         formatter.locale = Locale(identifier:  preferredLanguage)
-        dateFormat = DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
-        return dateFormat
+       
+        return DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
     }
 }
 
