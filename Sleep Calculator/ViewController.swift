@@ -16,6 +16,15 @@ class FirstScreen: UIViewController {
         self.dismiss(animated: true, completion: nil)
 
     }
+    
+    var lastHour = 99
+    var lastMinute = 99
+    let date = Date()
+    var timeReturn:(hours:Int?, minutes:Int?, newDataString:String) = (0,0,"")
+    
+    var hours:Int? = 0
+    var minutes:Int? = 0
+    var newDataString = ""
    
         var timer = Timer()
         var clocks: Dictionary<Int, UILabel> = [:]
@@ -36,14 +45,12 @@ class FirstScreen: UIViewController {
         }
     
     @objc func tick() {
-        var lastHour = 99
-        var lastMinute = 99
-        let date = Date()
-        let timeReturn = TimeModel().getHoursMinutes(dateSource: date)
         
-        let hours = timeReturn.hours
-        let minutes = timeReturn.minutes
-        let newDataString = timeReturn.newDataString
+        timeReturn = TimeModel().getHoursMinutes(dateSource: date)
+        
+    hours = timeReturn.hours
+        minutes = timeReturn.minutes
+        newDataString = timeReturn.newDataString
         
         
         if hours != lastHour || minutes != lastMinute {
@@ -96,16 +103,25 @@ class SecondScreen: UIViewController {
             self.tick()
         }
     
+    var lastHour = 99
+    var lastMinute = 99
+    let date = Date()
+    var timeReturn:(hours:Int?, minutes:Int?, newDataString:String) = (0,0,"")
+    
+    var hours:Int? = 0
+    var minutes:Int? = 0
+    var newDataString = ""
+    
+    
     
     @objc func tick() {
-        var lastHour = 99
-        var lastMinute = 99
         
-        let timeReturn = TimeModel().getHoursMinutes(dateSource: timePicker.date)
         
-        let hours = timeReturn.hours
-        let minutes = timeReturn.minutes
-        let newDataString = timeReturn.newDataString
+        timeReturn = TimeModel().getHoursMinutes(dateSource: timePicker.date)
+        
+        hours = timeReturn.hours
+        minutes = timeReturn.minutes
+        newDataString = timeReturn.newDataString
         
             if hours != lastHour || minutes != lastMinute {
                 print(hours!, minutes!)

@@ -4,24 +4,28 @@ import UIKit
 
 
 class FirstModel {
-    
+    var newMinutes = 0
+    var newHours = 0
+    var dateFormat = "dd.MM.yy"
+    var am = false
+    var text = ""
+    var newAmpm = ""
+    var moreThanTwelveH = false
     func hoursTimeCalc(hours: Int, minutes: Int, timeToAdd: Int, amOrPm: String) -> (String) {
-        var newMinutes = timeToAdd + minutes
-        var newHours = hours + (newMinutes / 60)
-
+        newMinutes = timeToAdd + minutes
+        newHours = hours + (newMinutes / 60)
+        am = false
+        dateFormat = TimeModel().dateFormatFunc()
         if newMinutes > 59 {
             newMinutes = newMinutes % 60
         }
 
-        let dateFormat = TimeModel().dateFormatFunc()
-        var am = false
-        var text = ""
         if dateFormat.range(of: "a") != nil {
             am = true //12-часовой
         }
-        var MoreThanTwelveH = 0
+        moreThanTwelveH = false
         if am == true {
-            var newAmpm = ""
+            
             
             if newHours >= 12 {
                 newHours = newHours - 12
@@ -30,10 +34,10 @@ class FirstModel {
                 }
                 if newHours >= 12 {
                     newHours = newHours - 12
-                    MoreThanTwelveH = 1
+                    moreThanTwelveH = true
                     
                 }
-                if MoreThanTwelveH == 0 {
+                if moreThanTwelveH == false {
 
                     newAmpm = TextProperty().changeAmText(from: amOrPm)
                 }
@@ -65,11 +69,16 @@ class FirstModel {
 
 
 class SecondModel {
-    
+    var newMinutes = 0
+    var newHours = 0
+    var dateFormat = "dd.MM.yy"
+            var am = false
+            var text = ""
+    var newAmpm = ""
     func hoursTimeCalc(hours: Int, minutes: Int, timetoadd: Int, amOrPm: String) -> (String){
-
-        var newMinutes = timetoadd+minutes
-                var newHours = hours+(newMinutes / 60)
+        dateFormat = TimeModel().dateFormatFunc()
+        newMinutes = timetoadd+minutes
+                newHours = hours+(newMinutes / 60)
                 if newMinutes < 1 {
                     newHours = newHours - 1
                     newMinutes = 60 + newMinutes % 60
@@ -78,15 +87,13 @@ class SecondModel {
                     newHours = newHours + 1
                     newMinutes = 0
                 }
-        let dateFormat = TimeModel().dateFormatFunc()
-                var am = false
-                var text = ""
-
+        
+        am = false
                 if dateFormat.range(of: "a") != nil {
                     am = true //12-часовой
                 }
                 if am == true{
-                    var newAmpm = ""
+                    
                     if newHours<0 {
                         newHours = newHours + 12
                         if newHours==0 {
@@ -115,31 +122,37 @@ class SecondModel {
 
 
 class TimeModel {
+    let formatter = DateFormatter()
+    let preferredLanguage = Locale.preferredLanguages[0] as String
+    
+    var dateString:String = ""
+    var time:Array<Substring> = ["" ]
+    var newDataString = ""
+    var hours:Int? = 0
+    var minutes:Int? = 0
+    var dateFormat = ""
+    
     func getHoursMinutes (dateSource: Date) -> (hours: Int?, minutes: Int?, newDataString: String) {
-        let formatter = DateFormatter()
-        let preferredLanguage = Locale.preferredLanguages[0] as String
-        
         formatter.locale = Locale(identifier:  preferredLanguage)
         
         formatter.dateFormat = "HH:mm"
-        let dateString = formatter.string(from: dateSource)
+        dateString = formatter.string(from: dateSource)
         
-        let time = dateString.split(separator: ":")
+        time = (dateString.split(separator: ":"))
        
         
-        let newDataString = formatter.string(from: dateSource)
-        let hours = Int(time[0])
-        let minutes = Int(time[1])
+        newDataString = formatter.string(from: dateSource)
+        hours = Int(time[0])
+        minutes = Int(time[1])
         return (hours, minutes, newDataString)
     }
     
     
     
     func dateFormatFunc() -> (String) {
-        let formatter = DateFormatter()
-        let preferredLanguage = Locale.preferredLanguages[0] as String
+        
         formatter.locale = Locale(identifier:  preferredLanguage)
-        let dateFormat = DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
+        dateFormat = DateFormatter.dateFormat(fromTemplate:"j", options: 0, locale: formatter.locale)!
         return dateFormat
     }
 }
@@ -151,9 +164,12 @@ class TimeModel {
 class TextProperty {
     let amText = NSLocalizedString("AM", comment: "AM")
     let pmText = NSLocalizedString("PM", comment: "PM")
+    var text: String = ""
+    var newAmpm = ""
+    
     
     func newMinutesText(hours: Int, minutes: Int, amPm: String) -> (String){
-        var text: String
+        
         if minutes < 10 {
                        text = "\(hours):0\(minutes) \(amPm)"
                    }
@@ -165,7 +181,7 @@ class TextProperty {
 
 
     func changeAmText(from: String) -> (String){
-        var newAmpm = ""
+        
         if from == "PM" {
             newAmpm = TextProperty().amText
         }
@@ -176,7 +192,7 @@ class TextProperty {
     }
 
     func keepAmText(from: String) -> String {
-        var newAmpm = ""
+        
         if from == "PM" {
             newAmpm = TextProperty().pmText
         }
