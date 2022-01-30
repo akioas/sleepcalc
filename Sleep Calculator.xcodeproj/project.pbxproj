@@ -21,6 +21,8 @@
 /* Begin PBXFileReference section */
 		4A0EA3EE2770E47600EB6454 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		4A0EA3F02770E4A600EB6454 /* ru.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
+		4A3A5656277F593E0095B867 /* Copy of Sleep Calculator.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = "Copy of Sleep Calculator.xctestplan"; path = "Sleep Calculator.xcodeproj/Copy of Sleep Calculator.xctestplan"; sourceTree = "<group>"; };
+		4A3A5657277F597D0095B867 /* Copy of Sleep Calculator.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Copy of Sleep Calculator.xctestplan"; sourceTree = "<group>"; };
 		4A3D5EBB272315B30027B8BE /* Sleep Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3D5EBE272315B30027B8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A3D5EC0272315B30027B8BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		4A3D5EB2272315B30027B8BE = {
 			isa = PBXGroup;
 			children = (
+				4A3A5656277F593E0095B867 /* Copy of Sleep Calculator.xctestplan */,
+				4A3A5657277F597D0095B867 /* Copy of Sleep Calculator.xctestplan */,
 				4A3D5EBD272315B30027B8BE /* Sleep Calculator */,
 				4A3D5EBC272315B30027B8BE /* Products */,
 			);
@@ -335,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "A.Sleep-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -354,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "A.Sleep-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
