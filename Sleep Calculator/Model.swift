@@ -203,3 +203,23 @@ class TextProperty {
     }
     
 }
+
+class SaveTime{
+    let KeyForUserDefaults = "time"
+    func saveNum(_ num: Date) {
+        UserDefaults.standard.set(num, forKey: KeyForUserDefaults)
+    }
+
+    func loadNum() -> Date {
+        
+        guard let encodedData = UserDefaults.standard.object(forKey: KeyForUserDefaults) as? Date else {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "HH:mm"
+            return dateFormatter.date(from: "8:00")!
+        }
+
+        return encodedData
+    }
+        
+}
+

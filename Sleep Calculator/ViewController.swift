@@ -87,6 +87,7 @@ class SecondScreen: UIViewController {
         var clocks: Dictionary<Int, UILabel> = [:]
         override func viewDidLoad() {
             super.viewDidLoad()
+            timePicker.date = SaveTime().loadNum()
             let backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
             navigationItem.backBarButtonItem = backBarButtonItem
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
@@ -115,9 +116,12 @@ class SecondScreen: UIViewController {
     
     
     @objc func tick() {
+    
         
         
         timeReturn = TimeModel().getHoursMinutes(dateSource: timePicker.date)
+        let y = timePicker.date
+        
         
         hours = timeReturn.hours
         minutes = timeReturn.minutes
@@ -131,5 +135,7 @@ class SecondScreen: UIViewController {
                 clocks[clocksCycle]!.text = SecondModel().hoursTimeCalc(hours: hours!, minutes: minutes!, timetoadd: (-105 - 90 * clocksCycle), amOrPm: newDataString)
                 }
             }
+        SaveTime().saveNum(y)
+        print("save")
         }
 }
