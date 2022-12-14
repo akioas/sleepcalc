@@ -39,6 +39,11 @@ class FirstScreen: UIViewController {
             4: oneFifthCycleClock,
             5: oneSixthCycleClock,
             ]
+            
+            for clock in clocks.values {
+                clock.layer.cornerRadius = 10
+            }
+            
             self.tick()
             
             
@@ -88,6 +93,13 @@ class SecondScreen: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             timePicker.date = SaveTime().loadNum()
+            timePicker.backgroundColor = .systemGray5
+            timePicker.tintColor = .white
+            timePicker.layer.borderWidth   = 1
+            timePicker.layer.cornerRadius  = 10
+            timePicker.layer.borderColor = UIColor.clear.cgColor
+            timePicker.layer.masksToBounds = true
+            
             let backBarButtonItem = UIBarButtonItem(title: " ", style: .plain, target: nil, action: nil)
             navigationItem.backBarButtonItem = backBarButtonItem
             timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:#selector(self.tick) , userInfo: nil, repeats: true)
@@ -100,6 +112,10 @@ class SecondScreen: UIViewController {
             4: twoFifthCycleClock,
             5: twoSixthCycleClock,
             ]
+            
+            for clock in clocks.values {
+                clock.layer.cornerRadius = 10
+            }
             
             self.tick()
         }
@@ -117,8 +133,6 @@ class SecondScreen: UIViewController {
     
     @objc func tick() {
     
-        
-        
         timeReturn = TimeModel().getHoursMinutes(dateSource: timePicker.date)
         let y = timePicker.date
         
@@ -136,6 +150,5 @@ class SecondScreen: UIViewController {
                 }
             }
         SaveTime().saveNum(y)
-        print("save")
         }
 }
