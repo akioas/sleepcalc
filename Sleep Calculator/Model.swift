@@ -21,7 +21,7 @@ class FirstModel {
         }
 
         if dateFormat.range(of: "a") != nil {
-            am = true //12-часовой
+            am = true //12h
         }
         moreThanTwelveH = false
         if am == true {
@@ -90,7 +90,7 @@ class SecondModel {
         
         am = false
                 if dateFormat.range(of: "a") != nil {
-                    am = true //12-часовой
+                    am = true //12h
                 }
                 if am == true{
                     
